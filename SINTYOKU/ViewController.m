@@ -7,18 +7,16 @@
 //
 
 #import "ViewController.h"
-<<<<<<< HEAD
 #import "EditImageViewController.h"
-#import "EditImageViewController.m"
 
-=======
->>>>>>> parent of 0f263f4... とりあえず何かあったらここまで戻す
 
 @interface ViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ViewController {
+    UIImage *sendImage;
+}
 
 // ==================================================================================
 
@@ -88,44 +86,41 @@
     UIImage* originalImage = (UIImage *) [info objectForKeyedSubscript:UIImagePickerControllerOriginalImage];
     
     // 編集画像
-    UIImage* editedImage = (UIImage *) [info objectForKeyedSubscript:UIImagePickerControllerEditedImage];
+    // ここは別にSavedImageじゃなくてoriginalImageでも問題ない！
     
-<<<<<<< HEAD
-=======
-    UIImage* savedImage;
-    if (editedImage) {
-        savedImage = editedImage;
-    } else {
-        savedImage = originalImage;
-    }
+//    UIImage* editedImage = (UIImage *) [info objectForKeyedSubscript:UIImagePickerControllerEditedImage];
+//    
+//    UIImage* savedImage;
+//    if (editedImage) {
+//        savedImage = editedImage;
+//    } else {
+//        savedImage = originalImage;
+//    }
     
->>>>>>> parent of 0f263f4... とりあえず何かあったらここまで戻す
+    [self performSegueWithIdentifier:@"EditImageViewSegue" sender:self];
+    
     // 選択された画像を表示
-    imageView.image = savedImage;
+    imageView.image = originalImage;
     
     //カメラロールに保存する
-    UIImageWriteToSavedPhotosAlbum(imageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+    // UIImageWriteToSavedPhotosAlbum(imageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
     
     // 開いているカメラ、ストリームライブラリを閉じる
     [self dismissViewControllerAnimated:YES completion:^ {
     }];
     
-    [self performSegueWithIdentifier:@"EditImageViewSegue" sender:self];
 }
 
-<<<<<<< HEAD
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     //Segueの特定
-    if ( [[segue identifier] isEqualToString:@"EditImageViewSegue"] ) {
+    if ( [[segue identifier] isEqualToString:@"next"] ) {
         EditImageViewController *EditImageViewController = [segue destinationViewController];
         //ここで遷移先ビューのクラスの変数receiveStringに値を渡している
         EditImageViewController.originalImage = sendImage;
     }
 }
 
-=======
->>>>>>> parent of 0f263f4... とりあえず何かあったらここまで戻す
 // ==================================================================================
 
 // カメラロールに保存する
