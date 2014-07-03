@@ -104,11 +104,6 @@
     // 選択された画像を表示
     //imageView.image = originalImage;
     
-    // 次の画面に渡す引数をセット
-    // _testImage = originalImage;
-    
-
-    
     //カメラロールに保存する
     // UIImageWriteToSavedPhotosAlbum(imageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
     

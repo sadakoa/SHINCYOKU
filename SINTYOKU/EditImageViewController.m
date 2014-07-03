@@ -14,7 +14,6 @@
 
 @implementation EditImageViewController
 
-//@synthesize SelectImage = _testImage;
 @synthesize arguments = _argumentsImage;
 
 
@@ -31,10 +30,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    //imageView.image = _testImage;
     self->imageView.image = _argumentsImage;
     NSLog(@"imageViewにライブラリから選んだ画像をセット");
-   
 }
 
 - (void)didReceiveMemoryWarning

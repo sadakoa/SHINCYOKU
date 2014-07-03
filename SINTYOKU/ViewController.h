@@ -19,7 +19,6 @@
     UIImage *_argumentsImage;
 }
 
-// @property(nonatomic, assign) UIImage* testImage;
 @property (nonatomic) UIImage *arguments;
 
 // カメラを開く
@@ -31,7 +30,5 @@
 // ブラウザを開く
 -(IBAction)openBrowserButton;
 
-// テスト遷移
--(IBAction)testSegue;
 
 @end
