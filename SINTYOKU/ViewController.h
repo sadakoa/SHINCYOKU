@@ -14,10 +14,13 @@
 {
     IBOutlet UILabel *label;
     IBOutlet UIImageView *imageView;
+    
+    //次の画面へ渡す引数
+    NSString *_arguments;
 }
 
 // @property(nonatomic, assign) UIImage* testImage;
-
+@property (nonatomic) NSString *arguments;
 
 // カメラを開く
 -(IBAction)openCameraButton;

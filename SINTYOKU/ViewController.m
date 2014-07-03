@@ -26,6 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+     _arguments = @"arguments";
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -102,22 +103,26 @@
     
     
     // 選択された画像を表示
-    imageView.image = originalImage;
+    //imageView.image = originalImage;
     
-    // originalimage(選んだ画像)をtestImageの箱に入れる
-    originalImage = testImage;
+    // 次の画面に渡す引数をセット
+    // _testImage = originalImage;
+    
+
     
     //カメラロールに保存する
     // UIImageWriteToSavedPhotosAlbum(imageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
     
-    // 開いているカメラ、ストリームライブラリを閉じる
-    [self dismissViewControllerAnimated:YES completion:^ {
-    }];
-    
     // 編集画面に遷移
     [self performSegueWithIdentifier:@"EditImageViewSegue" sender:self];
+    
+    // 開いているカメラ、ストリームライブラリを閉じる
+    [self dismissViewControllerAnimated:YES completion:^ {}];
 
 }
+
+// ==================================================================================
+
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
@@ -125,7 +130,7 @@
     if ( [[segue identifier] isEqualToString:@"EditImageViewSegue"] ) {
         EditImageViewController *EditImageViewController = [segue destinationViewController];
         //ここで遷移先ビューのクラスの変数receiveStringに値を渡している
-       EditImageViewController.SelectImage = testImage;
+       EditImageViewController.arguments = _arguments;
     }
 }
 
