@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+
+//遷移先ビューのクラスをインポート
 #import "EditImageViewController.h"
 
 
@@ -15,7 +17,8 @@
 @end
 
 @implementation ViewController {
-    UIImage *sendImage;
+    // testImageというUIImageの箱を作る
+    UIImage *testImage;
 }
 
 // ==================================================================================
@@ -97,10 +100,12 @@
 //        savedImage = originalImage;
 //    }
     
-    [self performSegueWithIdentifier:@"EditImageViewSegue" sender:self];
     
     // 選択された画像を表示
-    imageView.image = originalImage;
+   // imageView.image = originalImage;
+    
+    // originalimage(選んだ画像)をtestImageの箱に入れる
+    originalImage = testImage;
     
     //カメラロールに保存する
     // UIImageWriteToSavedPhotosAlbum(imageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
@@ -109,15 +114,18 @@
     [self dismissViewControllerAnimated:YES completion:^ {
     }];
     
+    // 編集画面に遷移
+    [self performSegueWithIdentifier:@"EditImageViewSegue" sender:self];
+
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     //Segueの特定
-    if ( [[segue identifier] isEqualToString:@"next"] ) {
+    if ( [[segue identifier] isEqualToString:@"EditImageViewSegue"] ) {
         EditImageViewController *EditImageViewController = [segue destinationViewController];
         //ここで遷移先ビューのクラスの変数receiveStringに値を渡している
-        EditImageViewController.originalImage = sendImage;
+       EditImageViewController.SelectImage = testImage;
     }
 }
 

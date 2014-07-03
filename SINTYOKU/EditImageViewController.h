@@ -16,7 +16,8 @@
     IBOutlet UIImageView *imageView;
 }
 
-@property(nonatomic, assign) UIImage* originalImage;
+// ライブラリから選んだ画像の変数を参照したい
+@property(nonatomic, assign) UIImage* SelectImage;
 
 
 @end

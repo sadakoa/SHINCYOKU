@@ -6,8 +6,6 @@
 //  Copyright (c) 2014年 sadakoa. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "EditImageViewController.m"
 #import "EditImageViewController.h"
 
 @interface EditImageViewController ()
@@ -30,7 +28,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    imageView.image = _originalImage;
+    imageView.image = _SelectImage;
     NSLog(@"imageViewにライブラリから選んだ画像をセット");
    
 }
