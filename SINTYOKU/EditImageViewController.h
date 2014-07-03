@@ -14,9 +14,12 @@
 {
     IBOutlet UILabel *label;
     IBOutlet UIImageView *imageView;
+    IBOutlet UIView *UIView;
     
     //前の画面から受け取る引数
     UIImage *_arguments;
+    
+    
 }
 
 // ライブラリから選んだ画像の変数を参照したい
