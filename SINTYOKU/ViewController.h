@@ -16,10 +16,13 @@
     IBOutlet UIImageView *imageView;
 }
 
+<<<<<<< HEAD
 @property(nonatomic, assign) UIImage* originalImage;
 
 
 
+=======
+>>>>>>> parent of 0f263f4... とりあえず何かあったらここまで戻す
 // カメラを開く
 -(IBAction)openCameraButton;
 

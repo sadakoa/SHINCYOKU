@@ -7,17 +7,18 @@
 //
 
 #import "ViewController.h"
+<<<<<<< HEAD
 #import "EditImageViewController.h"
 #import "EditImageViewController.m"
 
+=======
+>>>>>>> parent of 0f263f4... とりあえず何かあったらここまで戻す
 
 @interface ViewController ()
 
 @end
 
-@implementation ViewController {
-    UIImage *sendImage;
-}
+@implementation ViewController
 
 // ==================================================================================
 
@@ -87,22 +88,23 @@
     UIImage* originalImage = (UIImage *) [info objectForKeyedSubscript:UIImagePickerControllerOriginalImage];
     
     // 編集画像
-    // ここは別にSavedImageじゃなくてoriginalImageでも問題ない！
+    UIImage* editedImage = (UIImage *) [info objectForKeyedSubscript:UIImagePickerControllerEditedImage];
     
-//    UIImage* editedImage = (UIImage *) [info objectForKeyedSubscript:UIImagePickerControllerEditedImage];
-//    
-//    UIImage* savedImage;
-//    if (editedImage) {
-//        savedImage = editedImage;
-//    } else {
-//        savedImage = originalImage;
-//    }
+<<<<<<< HEAD
+=======
+    UIImage* savedImage;
+    if (editedImage) {
+        savedImage = editedImage;
+    } else {
+        savedImage = originalImage;
+    }
     
+>>>>>>> parent of 0f263f4... とりあえず何かあったらここまで戻す
     // 選択された画像を表示
-    imageView.image = originalImage;
+    imageView.image = savedImage;
     
     //カメラロールに保存する
-    // UIImageWriteToSavedPhotosAlbum(imageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+    UIImageWriteToSavedPhotosAlbum(imageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
     
     // 開いているカメラ、ストリームライブラリを閉じる
     [self dismissViewControllerAnimated:YES completion:^ {
@@ -111,6 +113,7 @@
     [self performSegueWithIdentifier:@"EditImageViewSegue" sender:self];
 }
 
+<<<<<<< HEAD
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     //Segueの特定
@@ -121,6 +124,8 @@
     }
 }
 
+=======
+>>>>>>> parent of 0f263f4... とりあえず何かあったらここまで戻す
 // ==================================================================================
 
 // カメラロールに保存する

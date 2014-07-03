@@ -16,7 +16,4 @@
     IBOutlet UIImageView *imageView;
 }
 
-@property(nonatomic, assign) UIImage* originalImage;
-
-
 @end
