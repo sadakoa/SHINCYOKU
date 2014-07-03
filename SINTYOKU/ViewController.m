@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "EditImageViewController.h"
+#import "EditImageViewController.m"
 
 
 @interface ViewController ()
@@ -97,8 +98,6 @@
 //        savedImage = originalImage;
 //    }
     
-    [self performSegueWithIdentifier:@"EditImageViewSegue" sender:self];
-    
     // 選択された画像を表示
     imageView.image = originalImage;
     
@@ -109,12 +108,13 @@
     [self dismissViewControllerAnimated:YES completion:^ {
     }];
     
+    [self performSegueWithIdentifier:@"EditImageViewSegue" sender:self];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     //Segueの特定
-    if ( [[segue identifier] isEqualToString:@"next"] ) {
+    if ( [[segue identifier] isEqualToString:@"EditImageViewSegue"] ) {
         EditImageViewController *EditImageViewController = [segue destinationViewController];
         //ここで遷移先ビューのクラスの変数receiveStringに値を渡している
         EditImageViewController.originalImage = sendImage;

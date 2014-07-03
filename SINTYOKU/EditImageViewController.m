@@ -30,7 +30,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    imageView.image = _originalImage;
+    imageView.image = [UIImage imageNamed:@"image.png"];
     NSLog(@"imageViewにライブラリから選んだ画像をセット");
    
 }

@@ -16,6 +16,8 @@
     IBOutlet UIImageView *imageView;
 }
 
+@property(nonatomic, assign) UIImage* originalImage;
+
 
 
 // カメラを開く

@@ -22,6 +22,9 @@
 		A29768A91965003C0000B976 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A29768A71965003C0000B976 /* InfoPlist.strings */; };
 		A29768AB1965003C0000B976 /* SINTYOKUTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A29768AA1965003C0000B976 /* SINTYOKUTests.m */; };
 		A29768B61965034F0000B976 /* EditImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A29768B51965034F0000B976 /* EditImageViewController.m */; };
+		A29768B81965168D0000B976 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = A29768B71965168D0000B976 /* image.png */; };
+		A29768BA19651B400000B976 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29768B919651B400000B976 /* Security.framework */; };
+		A29768BC19651B4A0000B976 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29768BB19651B4A0000B976 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		A29768AA1965003C0000B976 /* SINTYOKUTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SINTYOKUTests.m; sourceTree = "<group>"; };
 		A29768B41965034F0000B976 /* EditImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditImageViewController.h; sourceTree = "<group>"; };
 		A29768B51965034F0000B976 /* EditImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditImageViewController.m; sourceTree = "<group>"; };
+		A29768B71965168D0000B976 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		A29768B919651B400000B976 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A29768BB19651B4A0000B976 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A29768BC19651B4A0000B976 /* SystemConfiguration.framework in Frameworks */,
+				A29768BA19651B400000B976 /* Security.framework in Frameworks */,
 				A29768821965003C0000B976 /* CoreGraphics.framework in Frameworks */,
 				A29768841965003C0000B976 /* UIKit.framework in Frameworks */,
 				A29768801965003C0000B976 /* Foundation.framework in Frameworks */,
@@ -104,6 +112,8 @@
 		A297687E1965003C0000B976 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A29768BB19651B4A0000B976 /* SystemConfiguration.framework */,
+				A29768B919651B400000B976 /* Security.framework */,
 				A297687F1965003C0000B976 /* Foundation.framework */,
 				A29768811965003C0000B976 /* CoreGraphics.framework */,
 				A29768831965003C0000B976 /* UIKit.framework */,
@@ -115,6 +125,7 @@
 		A29768851965003C0000B976 /* SINTYOKU */ = {
 			isa = PBXGroup;
 			children = (
+				A29768B71965168D0000B976 /* image.png */,
 				A297688E1965003C0000B976 /* AppDelegate.h */,
 				A297688F1965003C0000B976 /* AppDelegate.m */,
 				A29768911965003C0000B976 /* Main.storyboard */,
@@ -236,6 +247,7 @@
 				A29768981965003C0000B976 /* Images.xcassets in Resources */,
 				A297688A1965003C0000B976 /* InfoPlist.strings in Resources */,
 				A29768931965003C0000B976 /* Main.storyboard in Resources */,
+				A29768B81965168D0000B976 /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
