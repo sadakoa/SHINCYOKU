@@ -121,4 +121,8 @@
 
 // ==================================================================================
 
+-(IBAction)testSegue {
+    [self performSegueWithIdentifier:@"EditImageViewSegue" sender:self];
+}
+
 @end
