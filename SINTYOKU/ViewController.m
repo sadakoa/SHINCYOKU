@@ -102,7 +102,7 @@
     
     
     // 選択された画像を表示
-   // imageView.image = originalImage;
+    imageView.image = originalImage;
     
     // originalimage(選んだ画像)をtestImageの箱に入れる
     originalImage = testImage;

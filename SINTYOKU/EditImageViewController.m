@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    imageView.image = _SelectImage;
+    imageView.image = [UIImage imageNamed:@"image.png"];
     NSLog(@"imageViewにライブラリから選んだ画像をセット");
    
 }
