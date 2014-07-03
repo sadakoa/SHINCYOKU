@@ -68,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="799" y="138"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit Image View Controller-->
         <scene sceneID="vVk-Wi-Kvs">
             <objects>
-                <viewController id="Ew0-2w-gZD" sceneMemberID="viewController">
+                <viewController id="Ew0-2w-gZD" customClass="EditImageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Eu4-A5-khn"/>
                         <viewControllerLayoutGuide type="bottom" id="b9V-3h-TYs"/>

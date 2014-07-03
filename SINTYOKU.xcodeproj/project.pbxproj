@@ -21,6 +21,7 @@
 		A29768A11965003C0000B976 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29768831965003C0000B976 /* UIKit.framework */; };
 		A29768A91965003C0000B976 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A29768A71965003C0000B976 /* InfoPlist.strings */; };
 		A29768AB1965003C0000B976 /* SINTYOKUTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A29768AA1965003C0000B976 /* SINTYOKUTests.m */; };
+		A29768B61965034F0000B976 /* EditImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A29768B51965034F0000B976 /* EditImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		A29768A61965003C0000B976 /* SINTYOKUTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SINTYOKUTests-Info.plist"; sourceTree = "<group>"; };
 		A29768A81965003C0000B976 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A29768AA1965003C0000B976 /* SINTYOKUTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SINTYOKUTests.m; sourceTree = "<group>"; };
+		A29768B41965034F0000B976 /* EditImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditImageViewController.h; sourceTree = "<group>"; };
+		A29768B51965034F0000B976 /* EditImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				A29768951965003C0000B976 /* ViewController.m */,
 				A29768971965003C0000B976 /* Images.xcassets */,
 				A29768861965003C0000B976 /* Supporting Files */,
+				A29768B41965034F0000B976 /* EditImageViewController.h */,
+				A29768B51965034F0000B976 /* EditImageViewController.m */,
 			);
 			path = SINTYOKU;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A29768B61965034F0000B976 /* EditImageViewController.m in Sources */,
 				A29768961965003C0000B976 /* ViewController.m in Sources */,
 				A29768901965003C0000B976 /* AppDelegate.m in Sources */,
 				A297688C1965003C0000B976 /* main.m in Sources */,
