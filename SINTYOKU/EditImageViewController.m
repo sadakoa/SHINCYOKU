@@ -65,8 +65,8 @@
     
     // スタンプを貼り付ける
     currentStampView = [[UIImageView alloc]
-                        initWithFrame:CGRectMake(point.x-5, point.y-5, 20, 40)];
-    currentStampView.image = [UIImage imageNamed:@"progress01.png"];
+                        initWithFrame:CGRectMake(point.x-5, point.y-5, 280, 140)];
+    currentStampView.image = [UIImage imageNamed:@"test01.png"];
     [self.view addSubview:currentStampView];
     
     // スタンプモード起動
@@ -83,7 +83,7 @@
     
     // スタンプの位置を変更する
     if (_isPressStamp) {
-        currentStampView.frame = CGRectMake(point.x-20, point.y-20, 20, 40);
+        currentStampView.frame = CGRectMake(point.x-20, point.y-20, 280, 140);
     }
 }
 
