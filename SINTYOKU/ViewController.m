@@ -14,16 +14,111 @@
 
 @implementation ViewController
 
+// ==================================================================================
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+// ==================================================================================
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+// ==================================================================================
+
+-(IBAction)openCameraButton {
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        // UIImagePickerControllerを作成し new = alloc + init
+        UIImagePickerController* imagePicker = [UIImagePickerController new];
+        imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+        imagePicker.allowsEditing = YES;
+        imagePicker.delegate = self;
+        
+        //カメラライブラリを開く
+        [self presentViewController:imagePicker animated:YES
+                         completion:^{
+                             NSLog(@"カメラを開く。");
+                         }];
+    }
+}
+
+// ==================================================================================
+
+-(IBAction)openStreamButton {
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
+        // UIImagePickerControllerを作成し new = alloc + init
+        UIImagePickerController* imagePicker = [UIImagePickerController new];
+        imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        imagePicker.allowsEditing = YES;
+        imagePicker.delegate = self;
+        
+        
+        //フォトライブラリを開く
+        [self presentViewController:imagePicker animated:YES
+                         completion:^{
+                             NSLog(@"ストリームを開いた");
+                         }];
+    }
+}
+
+// ==================================================================================
+
+-(IBAction)openBrowserButton {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.google.co.jp/search?q=%E3%81%8D%E3%82%93%E3%81%84%E3%82%8D%E3%83%A2%E3%82%B6%E3%82%A4%E3%82%AF+%E3%82%B7%E3%83%B3%E3%83%81%E3%83%A7%E3%82%AF&lr=lang_ja&safe=off&hl=ja&tbs=lr:lang_1ja&source=lnms&tbm=isch&sa=X&ei=oQywU_OfC4bnkAXl64D4Dg&ved=0CAgQ_AUoAQ&biw=1680&bih=952#hl=ja&lr=lang_ja&q=%E3%81%8D%E3%82%93%E3%81%84%E3%82%8D%E3%83%A2%E3%82%B6%E3%82%A4%E3%82%AF%E3%80%80%E9%80%B2%E6%8D%97&safe=off&tbm=isch&tbs=lr:lang_1ja"]];
+    
+}
+
+// ==================================================================================
+
+// 撮影後、もしくは選択後に行われる処理
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    // オリジナル画像
+    UIImage* originalImage = (UIImage *) [info objectForKeyedSubscript:UIImagePickerControllerOriginalImage];
+    
+    // 編集画像
+    UIImage* editedImage = (UIImage *) [info objectForKeyedSubscript:UIImagePickerControllerEditedImage];
+    
+    UIImage* savedImage;
+    if (editedImage) {
+        savedImage = editedImage;
+    } else {
+        savedImage = originalImage;
+    }
+    
+    // 選択された画像を表示
+    imageView.image = savedImage;
+    
+    //カメラロールに保存する
+    UIImageWriteToSavedPhotosAlbum(imageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+    
+    // 開いているカメラ、ストリームライブラリを閉じる
+    [self dismissViewControllerAnimated:YES completion:^ {
+    }];
+    
+}
+
+// ==================================================================================
+
+// カメラロールに保存する
+-(void)image:(UIImage*)image didFinishSavingWithError:(NSError*)error contextInfo:(void*)contextInfo {
+    
+    // 保存したか、失敗したか
+    NSString *message = @"画像を保存しました！";
+    if (error) message = @"画像の保存に失敗しました・・・";
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @""
+                                                    message: message
+                                                   delegate: nil
+                                          cancelButtonTitle: @"OK"
+                                          otherButtonTitles: nil];
+    [alert show];
+}
+
+// ==================================================================================
 
 @end
