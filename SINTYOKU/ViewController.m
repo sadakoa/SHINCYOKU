@@ -88,17 +88,17 @@
     // 編集画像
     // ここは別にSavedImageじゃなくてoriginalImageでも問題ない！
     
-//    UIImage* editedImage = (UIImage *) [info objectForKeyedSubscript:UIImagePickerControllerEditedImage];
-//    
-//    UIImage* savedImage;
-//    if (editedImage) {
-//        savedImage = editedImage;
-//    } else {
-//        savedImage = originalImage;
-//    }
+    UIImage* editedImage = (UIImage *) [info objectForKeyedSubscript:UIImagePickerControllerEditedImage];
+    
+   UIImage* savedImage;
+   if (editedImage) {
+       savedImage = editedImage;
+   } else {
+        savedImage = originalImage;
+   }
     
     
-    _argumentsImage = originalImage;
+    _argumentsImage = savedImage;
 
     
     // 選択された画像を表示
