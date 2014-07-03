@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface EditImageViewController : UIViewController
+<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+
+{
+    IBOutlet UILabel *label;
+    IBOutlet UIImageView *imageView;
+}
 
 @end
