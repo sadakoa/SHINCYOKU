@@ -6,6 +6,8 @@
 //  Copyright (c) 2014年 sadakoa. All rights reserved.
 //
 
+#import "ViewController.h"
+#import "EditImageViewController.m"
 #import "EditImageViewController.h"
 
 @interface EditImageViewController ()
@@ -13,6 +15,7 @@
 @end
 
 @implementation EditImageViewController
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +30,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    imageView.image = _originalImage;
+    NSLog(@"imageViewにライブラリから選んだ画像をセット");
+   
 }
 
 - (void)didReceiveMemoryWarning

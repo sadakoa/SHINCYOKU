@@ -16,6 +16,8 @@
     IBOutlet UIImageView *imageView;
 }
 
+
+
 // カメラを開く
 -(IBAction)openCameraButton;
 

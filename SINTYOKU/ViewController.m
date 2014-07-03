@@ -7,12 +7,16 @@
 //
 
 #import "ViewController.h"
+#import "EditImageViewController.h"
+
 
 @interface ViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ViewController {
+    UIImage *sendImage;
+}
 
 // ==================================================================================
 
@@ -82,25 +86,39 @@
     UIImage* originalImage = (UIImage *) [info objectForKeyedSubscript:UIImagePickerControllerOriginalImage];
     
     // 編集画像
-    UIImage* editedImage = (UIImage *) [info objectForKeyedSubscript:UIImagePickerControllerEditedImage];
+    // ここは別にSavedImageじゃなくてoriginalImageでも問題ない！
     
-    UIImage* savedImage;
-    if (editedImage) {
-        savedImage = editedImage;
-    } else {
-        savedImage = originalImage;
-    }
+//    UIImage* editedImage = (UIImage *) [info objectForKeyedSubscript:UIImagePickerControllerEditedImage];
+//    
+//    UIImage* savedImage;
+//    if (editedImage) {
+//        savedImage = editedImage;
+//    } else {
+//        savedImage = originalImage;
+//    }
+    
+    [self performSegueWithIdentifier:@"EditImageViewSegue" sender:self];
     
     // 選択された画像を表示
-    imageView.image = savedImage;
+    imageView.image = originalImage;
     
     //カメラロールに保存する
-    UIImageWriteToSavedPhotosAlbum(imageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+    // UIImageWriteToSavedPhotosAlbum(imageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
     
     // 開いているカメラ、ストリームライブラリを閉じる
     [self dismissViewControllerAnimated:YES completion:^ {
     }];
     
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    //Segueの特定
+    if ( [[segue identifier] isEqualToString:@"next"] ) {
+        EditImageViewController *EditImageViewController = [segue destinationViewController];
+        //ここで遷移先ビューのクラスの変数receiveStringに値を渡している
+        EditImageViewController.originalImage = sendImage;
+    }
 }
 
 // ==================================================================================
