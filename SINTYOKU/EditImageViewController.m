@@ -15,7 +15,7 @@
 @implementation EditImageViewController
 
 //@synthesize SelectImage = _testImage;
-@synthesize arguments = _arguments;
+@synthesize arguments = _argumentsImage;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -32,7 +32,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     //imageView.image = _testImage;
-     self.argumentsLabel.text = _arguments;
+    self->imageView.image = _argumentsImage;
     NSLog(@"imageViewにライブラリから選んだ画像をセット");
    
 }

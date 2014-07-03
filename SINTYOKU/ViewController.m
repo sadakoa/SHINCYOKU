@@ -16,17 +16,13 @@
 
 @end
 
-@implementation ViewController {
-    // testImageというUIImageの箱を作る
-    UIImage *testImage;
-}
+@implementation ViewController
 
 // ==================================================================================
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-     _arguments = @"arguments";
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -102,6 +98,9 @@
 //    }
     
     
+    _argumentsImage = originalImage;
+
+    
     // 選択された画像を表示
     //imageView.image = originalImage;
     
@@ -130,7 +129,7 @@
     if ( [[segue identifier] isEqualToString:@"EditImageViewSegue"] ) {
         EditImageViewController *EditImageViewController = [segue destinationViewController];
         //ここで遷移先ビューのクラスの変数receiveStringに値を渡している
-       EditImageViewController.arguments = _arguments;
+       EditImageViewController.arguments = _argumentsImage;
     }
 }
 
