@@ -99,6 +99,9 @@
                                 <state key="normal" title="進む">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="test" destination="Ew0-2w-gZD" eventType="touchUpInside" id="uKR-vx-CIU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dk8-p4-PJi">
                                 <rect key="frame" x="208" y="507" width="72" height="30"/>
@@ -106,6 +109,9 @@
                                 <state key="normal" title="スタンプ">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="testSegue" destination="Ew0-2w-gZD" eventType="touchUpInside" id="a32-ft-sIO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRr-rA-rVI">
                                 <rect key="frame" x="53" y="507" width="72" height="30"/>

@@ -36,6 +36,9 @@
     // Do any additional setup after loading the view.
     self->imageView.image = _argumentsImage;
     NSLog(@"imageViewにライブラリから選んだ画像をセット");
+    
+    currentStampView = nil;
+    _isPressStamp = NO;
 }
 
 // ==================================================================================
@@ -48,9 +51,130 @@
 
 // ==================================================================================
 
+-(IBAction)testSegue {
+    [self performSegueWithIdentifier:@"StampImageCollection" sender:self];
+}
+
 // ==================================================================================
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    // タッチされた座標を取得
+    UITouch* touch = [touches anyObject];
+    // imageViewの中
+    CGPoint point = [touch locationInView:imageView];
+    
+    // スタンプを貼り付ける
+    currentStampView = [[UIImageView alloc]
+                        initWithFrame:CGRectMake(point.x-5, point.y-5, 20, 40)];
+    currentStampView.image = [UIImage imageNamed:@"progress01.png"];
+    [self.view addSubview:currentStampView];
+    
+    // スタンプモード起動
+     _isPressStamp = YES;
+    
+}
+
 // ==================================================================================
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    // タッチされた座標を取得
+    UITouch* touch = [touches anyObject];
+    CGPoint point = [touch locationInView:imageView];
+    
+    // スタンプの位置を変更する
+    if (_isPressStamp) {
+        currentStampView.frame = CGRectMake(point.x-20, point.y-20, 20, 40);
+    }
+}
+
 // ==================================================================================
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    // スタンプモード終了（スタンプを確定する）
+    _isPressStamp = NO;
+}
+
+// ==================================================================================
+
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
+    // スタンプモード終了（スタンプを確定する）
+    _isPressStamp = NO;
+}
+
+// ==================================================================================
+
+// 領域を指定して画像を切り抜く
+-(UIImage *)captureImage
+{
+    // 描画領域の設定
+    CGSize size = CGSizeMake(imageView.frame.size.width , imageView.frame.size.height);
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
+    
+    // グラフィックスコンテキスト取得
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    // コンテキストの位置を切り取り開始位置に合わせる
+    CGPoint point = imageView.frame.origin;
+    CGAffineTransform affineMoveLeftTop
+    = CGAffineTransformMakeTranslation(
+                                       -(int)point.x ,
+                                       -(int)point.y );
+    CGContextConcatCTM(context , affineMoveLeftTop );
+    
+    // viewから切り取る
+    [(CALayer*)self.view.layer renderInContext:context];
+    
+    // 切り取った内容をUIImageとして取得
+    UIImage *cnvImg = UIGraphicsGetImageFromCurrentImageContext();
+    
+    // コンテキストの破棄
+    UIGraphicsEndImageContext();
+    
+    return cnvImg;
+}
+
+// ==================================================================================
+
+-(IBAction)test {
+    // 画像を取得
+    UIImage *saveImage = [self captureImage];
+    
+    // カメラロールに保存
+    if (saveImage != nil) {
+        UIImageWriteToSavedPhotosAlbum(saveImage,
+                                       self,
+                                       @selector(targetImage:didFinishSavingWithError:contextInfo:),
+                                       NULL);
+    }
+
+}
+
+// 画像の保存完了時に呼ばれるメソッド
+- (void)targetImage:(UIImage *)image didFinishSavingWithError:(NSError *)error
+        contextInfo:(void *)context
+{
+    NSString *message = [NSString string];
+    if (error) {
+        // 保存失敗時の処理
+        message = @"保存に失敗しました";
+    } else {
+        // 保存成功時の処理
+        message = @"保存に成功しました";
+    }
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil
+                                                    message:message
+                                                   delegate:self
+                                          cancelButtonTitle:nil
+                                          otherButtonTitles:@"OK", nil];
+    [alert show];
+}
+
+// ==================================================================================
+
+
+
+
+
 /*
 #pragma mark - Navigation
 

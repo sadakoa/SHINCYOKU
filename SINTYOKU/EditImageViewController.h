@@ -19,8 +19,13 @@
     //前の画面から受け取る引数
     UIImage *_arguments;
     
+    UIImageView *currentStampView;  // 貼り付け中のスタンプ画像
+    BOOL _isPressStamp;  // スタンプ貼り付け中かどうか
+    
     
 }
+
+-(IBAction)test;
 
 // ライブラリから選んだ画像の変数を参照したい
 //@property(nonatomic, assign) UIImage* SelectImage;
