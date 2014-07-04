@@ -161,7 +161,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="j99-Ya-SEe">
-                        <barButtonItem key="rightBarButtonItem" title="保存" id="7g3-pP-nng"/>
+                        <barButtonItem key="rightBarButtonItem" title="保存" id="7g3-pP-nng">
+                            <connections>
+                                <action selector="saveImage" destination="6Uo-dP-8sP" id="4Wm-cy-v0S"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="PreviewLabelImage" destination="ecZ-Cd-eJn" id="ZXq-3p-07h"/>

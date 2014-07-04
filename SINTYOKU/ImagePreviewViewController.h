@@ -23,6 +23,8 @@
     BOOL _isPressStamp;  // スタンプ貼り付け中かどうか
 }
 
+- (IBAction)saveImage;
+
 @property (nonatomic) UIImage *PreviewImage;
 @property (weak, nonatomic) IBOutlet UIImageView *PreviewLabelImage;
 

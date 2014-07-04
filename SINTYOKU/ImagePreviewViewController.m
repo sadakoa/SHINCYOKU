@@ -42,6 +42,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)saveImage {
+}
+
 /*
 #pragma mark - Navigation
 
