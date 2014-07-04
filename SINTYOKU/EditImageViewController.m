@@ -8,9 +8,6 @@
 
 #import "EditImageViewController.h"
 
-// 遷移先のビュー取得
-#import "ImagePreviewViewController.h"
-
 @interface EditImageViewController ()
 
 

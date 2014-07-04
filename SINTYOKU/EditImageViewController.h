@@ -22,8 +22,7 @@
     UIImageView *currentStampView;  // 貼り付け中のスタンプ画像
     BOOL _isPressStamp;  // スタンプ貼り付け中かどうか
     
-    //次の画面へ渡す引数
-    UIImage *_stampEditImage;
+    
 }
 
 -(IBAction)test;
