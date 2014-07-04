@@ -51,10 +51,39 @@
 // ==================================================================================
 
 -(IBAction)saveImage {
-
+    
+    // このErrorは気にしなくていい
+    UIImage *image = _PreviewSaveImage;
+    // カメラロールに保存する
+    if (_PreviewSaveImage != nil) {
+        UIImageWriteToSavedPhotosAlbum(_PreviewSaveImage,
+                                       self,
+                                       @selector(targetImage:didFinishSavingWithError:contextInfo:),
+                                       
+                                       NULL);
+    }
 }
 
 // ==================================================================================
+
+- (void)targetImage:(UIImage *)image didFinishSavingWithError:(NSError *)error
+        contextInfo:(void *)context
+{
+    NSString *message = [NSString string];
+    if (error) {
+        // 保存失敗時の処理
+        message = @"保存に失敗した。";
+    } else {
+        // 保存成功時の処理
+        message = @"保存に成功しました";
+    }
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil
+                                                    message:message
+                                                   delegate:self
+                                          cancelButtonTitle:nil
+                                          otherButtonTitles:@"OK", nil];
+    [alert show];
+}
 
 
 // ==================================================================================
