@@ -25,7 +25,7 @@
     
 }
 
--(IBAction)test;
+-(IBAction)saveImage;
 
 
 

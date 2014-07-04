@@ -14,7 +14,7 @@
 
 @implementation ImagePreviewViewController
 
-@synthesize PreviewImage = _testImage;
+@synthesize PreviewImage = _PreviewSaveImage;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,8 +32,8 @@
     self.navigationItem.title = @"Preview";
     [UINavigationBar appearance].barTintColor = [UIColor colorWithRed:0.000 green:0.549 blue:0.890 alpha:1.000];
     
-    self->imageView.image = _testImage;
-    NSLog(@"imageViewにライブラリから選んだ画像をセット");
+    self->imageView.image = _PreviewSaveImage;
+    NSLog(@"プレビュー画面");
 }
 
 - (void)didReceiveMemoryWarning

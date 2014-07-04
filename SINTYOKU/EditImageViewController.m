@@ -164,7 +164,7 @@
 
 // ==================================================================================
 
--(IBAction)test {
+-(IBAction)saveImage {
     // 画像を取得
     UIImage *saveImage = [self captureImage];
     
