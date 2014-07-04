@@ -152,9 +152,21 @@
                     <view key="view" contentMode="scaleToFill" id="wVf-KQ-u2F">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JWe-6b-BrB">
+                                <rect key="frame" x="0.0" y="195" width="320" height="177"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="j99-Ya-SEe"/>
+                    <navigationItem key="navigationItem" id="j99-Ya-SEe">
+                        <barButtonItem key="rightBarButtonItem" title="保存" id="7g3-pP-nng"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="argumentsLabelImage" destination="JWe-6b-BrB" id="Jj0-gO-kdw"/>
+                        <outlet property="imageView" destination="JWe-6b-BrB" id="0lF-Ob-csw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xcm-i9-JQS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
