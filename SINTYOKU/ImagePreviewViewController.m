@@ -62,6 +62,7 @@
                                        
                                        NULL);
     }
+    
 }
 
 // ==================================================================================
@@ -83,6 +84,9 @@
                                           cancelButtonTitle:nil
                                           otherButtonTitles:@"OK", nil];
     [alert show];
+    
+    // 画面遷移
+    [self performSegueWithIdentifier:@"SNSModalSegue" sender:self];
 }
 
 

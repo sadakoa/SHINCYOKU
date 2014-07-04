@@ -170,11 +170,30 @@
                     <connections>
                         <outlet property="PreviewLabelImage" destination="ecZ-Cd-eJn" id="ZXq-3p-07h"/>
                         <outlet property="imageView" destination="ecZ-Cd-eJn" id="Aon-3M-hks"/>
+                        <segue destination="sdS-f2-TKL" kind="modal" identifier="SNSModalSegue" id="3RI-n9-70V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xcm-i9-JQS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1657" y="138"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RbW-eN-55d">
+            <objects>
+                <viewController id="sdS-f2-TKL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0vb-h5-Dzv"/>
+                        <viewControllerLayoutGuide type="bottom" id="1bq-aO-1ji"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Szg-2x-QFx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fi7-zY-D0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2101" y="136"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="J1X-vj-1mE">
