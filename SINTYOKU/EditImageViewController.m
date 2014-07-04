@@ -57,6 +57,7 @@
 
 // ==================================================================================
 
+// ユーザによりViewへのタッチが開始したときに呼び出されるメソッド
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     // タッチされた座標を取得
     UITouch* touch = [touches anyObject];
@@ -76,6 +77,7 @@
 
 // ==================================================================================
 
+// ユーザがドラッグしたときに呼び出されるメソッド
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
     // タッチされた座標を取得
     UITouch* touch = [touches anyObject];
@@ -89,6 +91,7 @@
 
 // ==================================================================================
 
+// ユーザがタッチを終了したときに呼び出されるメソッド
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     // スタンプモード終了（スタンプを確定する）
     _isPressStamp = NO;
@@ -96,6 +99,7 @@
 
 // ==================================================================================
 
+// ユーザーが他のアクションで完全に終了した時に呼び出されるメソッド
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
     // スタンプモード終了（スタンプを確定する）
     _isPressStamp = NO;
