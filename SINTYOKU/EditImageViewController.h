@@ -34,6 +34,7 @@
 //@property(nonatomic, weak) UIImageView *imageView;
 
 @property (nonatomic) UIImage *arguments;
+@property (nonatomic) UIImage *editPreviewImage;
 
 // 画面に表示するためのもの
  @property (weak, nonatomic) IBOutlet UIImageView *argumentsLabelImage;

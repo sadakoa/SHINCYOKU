@@ -157,15 +157,15 @@
 
 -(IBAction)test {
     // 画像を取得
-    UIImage *saveImage = [self captureImage];
+    
     
     // カメラロールに保存
-    if (saveImage != nil) {
-        UIImageWriteToSavedPhotosAlbum(saveImage,
-                                       self,
-                                       @selector(targetImage:didFinishSavingWithError:contextInfo:),
-                                       NULL);
-    }
+//    if (saveImage != nil) {
+//        UIImageWriteToSavedPhotosAlbum(saveImage,
+//                                       self,
+//                                       @selector(targetImage:didFinishSavingWithError:contextInfo:),
+//                                       NULL);
+//    }
 
 }
 
@@ -175,7 +175,10 @@
     if ( [[segue identifier] isEqualToString:@"ImagePreviewSegue"] ) {
         ImagePreviewViewController *ImagePreviewViewController = [segue destinationViewController];
         //ここで遷移先ビューのクラスの変数receiveStringに値を渡している
-        ImagePreviewViewController.PreviewImage = _argumentsImage;
+        UIImage *saveImage = [self captureImage];
+        
+        _editPreviewImage = saveImage;
+        ImagePreviewViewController.PreviewImage = _editPreviewImage;
     }
 }
 
