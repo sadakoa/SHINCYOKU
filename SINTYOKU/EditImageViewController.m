@@ -191,7 +191,7 @@
     NSString *message = [NSString string];
     if (error) {
         // 保存失敗時の処理
-        message = @"保存に失敗しました";
+        message = @"保存に失敗した。";
     } else {
         // 保存成功時の処理
         message = @"保存に成功しました";
