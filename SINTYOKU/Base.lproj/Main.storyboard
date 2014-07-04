@@ -128,7 +128,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="uhV-op-wp3">
                             <connections>
                                 <action selector="pleviewSegue" destination="Ew0-2w-gZD" id="f5S-ad-1su"/>
-                                <segue destination="6Uo-dP-8sP" kind="push" id="GYQ-mZ-pI2"/>
+                                <segue destination="6Uo-dP-8sP" kind="push" identifier="ImagePreviewSegue" id="GYQ-mZ-pI2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
