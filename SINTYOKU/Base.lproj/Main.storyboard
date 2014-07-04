@@ -153,7 +153,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JWe-6b-BrB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ecZ-Cd-eJn">
                                 <rect key="frame" x="0.0" y="195" width="320" height="177"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -164,8 +164,8 @@
                         <barButtonItem key="rightBarButtonItem" title="保存" id="7g3-pP-nng"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="argumentsLabelImage" destination="JWe-6b-BrB" id="Jj0-gO-kdw"/>
-                        <outlet property="imageView" destination="JWe-6b-BrB" id="0lF-Ob-csw"/>
+                        <outlet property="PreviewLabelImage" destination="ecZ-Cd-eJn" id="ZXq-3p-07h"/>
+                        <outlet property="imageView" destination="ecZ-Cd-eJn" id="Aon-3M-hks"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xcm-i9-JQS" userLabel="First Responder" sceneMemberID="firstResponder"/>

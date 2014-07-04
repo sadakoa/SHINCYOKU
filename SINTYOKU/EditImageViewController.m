@@ -8,6 +8,9 @@
 
 #import "EditImageViewController.h"
 
+// 遷移先
+#import "ImagePreviewViewController.h"
+
 @interface EditImageViewController ()
 
 
@@ -48,6 +51,16 @@
     currentStampView = nil;
     _isPressStamp = NO;
     
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    //Segueの特定
+    if ( [[segue identifier] isEqualToString:@"ImagePreviewSegue"] ) {
+        ImagePreviewViewController *ImagePreviewViewController = [segue destinationViewController];
+        //ここで遷移先ビューのクラスの変数receiveStringに値を渡している
+        ImagePreviewViewController.PreviewImage = _argumentsImage;
+    }
 }
 
 
