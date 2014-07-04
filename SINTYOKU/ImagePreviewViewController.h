@@ -23,7 +23,6 @@
     BOOL _isPressStamp;  // スタンプ貼り付け中かどうか
 }
 
-@property (nonatomic) UIImage *arguments;
-@property (weak, nonatomic) IBOutlet UIImageView *argumentsLabelImage;
+@property (nonatomic) UIImage *recive;
 
 @end
