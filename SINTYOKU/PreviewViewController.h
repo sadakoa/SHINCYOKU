@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface PreviewViewController : UIViewController
+<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+
+{
+        IBOutlet UILabel *label;
+        IBOutlet UIImageView *imageView;
+}
+
 
 @end
