@@ -53,17 +53,6 @@
     
 }
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    //Segueの特定
-    if ( [[segue identifier] isEqualToString:@"ImagePreviewSegue"] ) {
-        ImagePreviewViewController *ImagePreviewViewController = [segue destinationViewController];
-        //ここで遷移先ビューのクラスの変数receiveStringに値を渡している
-        ImagePreviewViewController.PreviewImage = _argumentsImage;
-    }
-}
-
-
 // ==================================================================================
 
 - (void)didReceiveMemoryWarning
@@ -128,6 +117,7 @@
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
     // スタンプモード終了（スタンプを確定する）
     _isPressStamp = NO;
+    
 }
 
 // ==================================================================================
@@ -138,6 +128,7 @@
     // 描画領域の設定
     CGSize size = CGSizeMake(imageView.frame.size.width , imageView.frame.size.height);
     UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
+    NSLog(@"きてるか");
     
     // グラフィックスコンテキスト取得
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -164,7 +155,7 @@
 
 // ==================================================================================
 
--(IBAction)saveImage {
+-(IBAction)test {
     // 画像を取得
     UIImage *saveImage = [self captureImage];
     
@@ -177,6 +168,18 @@
     }
 
 }
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    //Segueの特定
+    if ( [[segue identifier] isEqualToString:@"ImagePreviewSegue"] ) {
+        ImagePreviewViewController *ImagePreviewViewController = [segue destinationViewController];
+        //ここで遷移先ビューのクラスの変数receiveStringに値を渡している
+        ImagePreviewViewController.PreviewImage = _argumentsImage;
+    }
+}
+
+// ==================================================================================
 
 // 画像の保存完了時に呼ばれるメソッド
 - (void)targetImage:(UIImage *)image didFinishSavingWithError:(NSError *)error
