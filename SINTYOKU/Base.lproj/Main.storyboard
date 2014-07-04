@@ -119,9 +119,6 @@
                                 <state key="normal" title="削除">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="6Uo-dP-8sP" kind="push" id="yhT-qp-fGt"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -132,6 +129,7 @@
                     <connections>
                         <outlet property="argumentsLabelImage" destination="FrZ-IH-lqx" id="Rxi-oc-ZF7"/>
                         <outlet property="imageView" destination="FrZ-IH-lqx" id="rsE-PF-J4t"/>
+                        <segue destination="6Uo-dP-8sP" kind="push" identifier="ImagePreviewSegue" id="amp-Pg-FPc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wyl-c0-Vwm" userLabel="First Responder" sceneMemberID="firstResponder"/>

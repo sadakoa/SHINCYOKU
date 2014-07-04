@@ -10,6 +10,7 @@
 
 @interface EditImageViewController ()
 
+
 @end
 
 @implementation EditImageViewController
@@ -24,6 +25,9 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        
+        
+
     }
     return self;
 }
@@ -34,12 +38,15 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
     self->imageView.image = _argumentsImage;
     NSLog(@"imageViewにライブラリから選んだ画像をセット");
     
     currentStampView = nil;
     _isPressStamp = NO;
+    
 }
+
 
 // ==================================================================================
 
@@ -176,8 +183,6 @@
 }
 
 // ==================================================================================
-
-
 
 
 
