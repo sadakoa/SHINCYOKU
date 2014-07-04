@@ -28,6 +28,7 @@
 		A29768CB1965A0A90000B976 /* yes01.png in Resources */ = {isa = PBXBuildFile; fileRef = A29768C81965A0A90000B976 /* yes01.png */; };
 		A29768D01965AEA20000B976 /* test01.png in Resources */ = {isa = PBXBuildFile; fileRef = A29768CF1965AEA20000B976 /* test01.png */; };
 		A29768D219664EB10000B976 /* test02.png in Resources */ = {isa = PBXBuildFile; fileRef = A29768D119664EB10000B976 /* test02.png */; };
+		A29768D5196666D40000B976 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A29768D4196666D40000B976 /* PreviewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		A29768C81965A0A90000B976 /* yes01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yes01.png; sourceTree = "<group>"; };
 		A29768CF1965AEA20000B976 /* test01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test01.png; sourceTree = "<group>"; };
 		A29768D119664EB10000B976 /* test02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test02.png; sourceTree = "<group>"; };
+		A29768D3196666D40000B976 /* PreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
+		A29768D4196666D40000B976 /* PreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +145,8 @@
 				A29768861965003C0000B976 /* Supporting Files */,
 				A29768B41965034F0000B976 /* EditImageViewController.h */,
 				A29768B51965034F0000B976 /* EditImageViewController.m */,
+				A29768D3196666D40000B976 /* PreviewViewController.h */,
+				A29768D4196666D40000B976 /* PreviewViewController.m */,
 			);
 			path = SINTYOKU;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 			files = (
 				A29768B61965034F0000B976 /* EditImageViewController.m in Sources */,
 				A29768961965003C0000B976 /* ViewController.m in Sources */,
+				A29768D5196666D40000B976 /* PreviewViewController.m in Sources */,
 				A29768901965003C0000B976 /* AppDelegate.m in Sources */,
 				A297688C1965003C0000B976 /* main.m in Sources */,
 			);
