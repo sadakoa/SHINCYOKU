@@ -16,10 +16,11 @@
     IBOutlet UIImageView *imageView;
     
     //次の画面へ渡す引数
-    UIImage *_argumentsImage;
+    UIImage *_beforeStampEditImage;
 }
 
-@property (nonatomic) UIImage *arguments;
+// 多分要らない
+// @property (nonatomic) UIImage *arguments;
 
 // カメラを開く
 -(IBAction)openCameraButton;

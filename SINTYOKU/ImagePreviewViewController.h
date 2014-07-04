@@ -17,13 +17,15 @@
     IBOutlet UIView *UIView;
     
     //前の画面から受け取る引数
-    UIImage *_arguments;
+    // UIImage *_arguments;
     
     UIImageView *currentStampView;  // 貼り付け中のスタンプ画像
     BOOL _isPressStamp;  // スタンプ貼り付け中かどうか
 }
 
-@property (nonatomic) UIImage *arguments;
-@property (weak, nonatomic) IBOutlet UIImageView *argumentsLabelImage;
+- (IBAction)saveImage;
+
+@property (nonatomic) UIImage *PreviewImage;
+@property (weak, nonatomic) IBOutlet UIImageView *PreviewLabelImage;
 
 @end

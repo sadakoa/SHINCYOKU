@@ -8,6 +8,9 @@
 
 #import "EditImageViewController.h"
 
+// 遷移先
+#import "ImagePreviewViewController.h"
+
 @interface EditImageViewController ()
 
 
@@ -49,7 +52,6 @@
     _isPressStamp = NO;
     
 }
-
 
 // ==================================================================================
 
@@ -115,6 +117,7 @@
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
     // スタンプモード終了（スタンプを確定する）
     _isPressStamp = NO;
+    
 }
 
 // ==================================================================================
@@ -125,6 +128,7 @@
     // 描画領域の設定
     CGSize size = CGSizeMake(imageView.frame.size.width , imageView.frame.size.height);
     UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
+    NSLog(@"きてるか");
     
     // グラフィックスコンテキスト取得
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -156,14 +160,30 @@
     UIImage *saveImage = [self captureImage];
     
     // カメラロールに保存
-    if (saveImage != nil) {
-        UIImageWriteToSavedPhotosAlbum(saveImage,
-                                       self,
+   if (saveImage != nil) {
+       UIImageWriteToSavedPhotosAlbum(saveImage,
+                                      self,
                                        @selector(targetImage:didFinishSavingWithError:contextInfo:),
-                                       NULL);
-    }
+            
+                                      NULL);
+   }
 
 }
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    //Segueの特定
+    if ( [[segue identifier] isEqualToString:@"ImagePreviewSegue"] ) {
+        ImagePreviewViewController *ImagePreviewViewController = [segue destinationViewController];
+        //ここで遷移先ビューのクラスの変数receiveStringに値を渡している
+        UIImage *saveImage = [self captureImage];
+        
+        _editPreviewImage = saveImage;
+        ImagePreviewViewController.PreviewImage = _editPreviewImage;
+    }
+}
+
+// ==================================================================================
 
 // 画像の保存完了時に呼ばれるメソッド
 - (void)targetImage:(UIImage *)image didFinishSavingWithError:(NSError *)error
@@ -172,7 +192,7 @@
     NSString *message = [NSString string];
     if (error) {
         // 保存失敗時の処理
-        message = @"保存に失敗しました";
+        message = @"保存に失敗した。";
     } else {
         // 保存成功時の処理
         message = @"保存に成功しました";

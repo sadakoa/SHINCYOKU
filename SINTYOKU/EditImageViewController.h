@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EditImageViewController : UIViewController
+@interface EditImageViewController : UIViewController\
 <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 {
@@ -16,8 +16,8 @@
     IBOutlet UIImageView *imageView;
     IBOutlet UIView *UIView;
     
-    //前の画面から受け取る引数
-    UIImage *_arguments;
+    //前の画面から受け取る引数 要らないかも
+    // UIImage *_arguments;
     
     UIImageView *currentStampView;  // 貼り付け中のスタンプ画像
     BOOL _isPressStamp;  // スタンプ貼り付け中かどうか
@@ -34,7 +34,10 @@
 //@property(nonatomic, weak) UIImageView *imageView;
 
 @property (nonatomic) UIImage *arguments;
-@property (weak, nonatomic) IBOutlet UIImageView *argumentsLabelImage;
+@property (nonatomic) UIImage *editPreviewImage;
+
+// 画面に表示するためのもの
+ @property (weak, nonatomic) IBOutlet UIImageView *argumentsLabelImage;
 
 
 @end

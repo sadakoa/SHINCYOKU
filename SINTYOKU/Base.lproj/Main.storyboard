@@ -128,7 +128,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="uhV-op-wp3">
                             <connections>
                                 <action selector="pleviewSegue" destination="Ew0-2w-gZD" id="f5S-ad-1su"/>
-                                <segue destination="6Uo-dP-8sP" kind="push" id="GYQ-mZ-pI2"/>
+                                <segue destination="6Uo-dP-8sP" kind="push" identifier="ImagePreviewSegue" id="GYQ-mZ-pI2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -153,7 +153,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JWe-6b-BrB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ecZ-Cd-eJn">
                                 <rect key="frame" x="0.0" y="195" width="320" height="177"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -161,11 +161,15 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="j99-Ya-SEe">
-                        <barButtonItem key="rightBarButtonItem" title="保存" id="7g3-pP-nng"/>
+                        <barButtonItem key="rightBarButtonItem" title="保存" id="7g3-pP-nng">
+                            <connections>
+                                <action selector="saveImage" destination="6Uo-dP-8sP" id="4Wm-cy-v0S"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="argumentsLabelImage" destination="JWe-6b-BrB" id="Jj0-gO-kdw"/>
-                        <outlet property="imageView" destination="JWe-6b-BrB" id="0lF-Ob-csw"/>
+                        <outlet property="PreviewLabelImage" destination="ecZ-Cd-eJn" id="ZXq-3p-07h"/>
+                        <outlet property="imageView" destination="ecZ-Cd-eJn" id="Aon-3M-hks"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xcm-i9-JQS" userLabel="First Responder" sceneMemberID="firstResponder"/>

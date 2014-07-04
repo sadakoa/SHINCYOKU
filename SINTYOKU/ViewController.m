@@ -100,7 +100,7 @@
    }
     
     
-    _argumentsImage = savedImage;
+    _beforeStampEditImage = savedImage;
 
     
     // 選択された画像を表示
@@ -126,7 +126,7 @@
     if ( [[segue identifier] isEqualToString:@"EditImageViewSegue"] ) {
         EditImageViewController *EditImageViewController = [segue destinationViewController];
         //ここで遷移先ビューのクラスの変数receiveStringに値を渡している
-       EditImageViewController.arguments = _argumentsImage;
+       EditImageViewController.arguments = _beforeStampEditImage;
     }
 }
 

@@ -14,6 +14,10 @@
 
 @implementation ImagePreviewViewController
 
+@synthesize PreviewImage = _PreviewSaveImage;
+
+// ==================================================================================
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -23,19 +27,41 @@
     return self;
 }
 
+// ==================================================================================
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"Preview";
     [UINavigationBar appearance].barTintColor = [UIColor colorWithRed:0.000 green:0.549 blue:0.890 alpha:1.000];
+    
+    self->imageView.image = _PreviewSaveImage;
+    NSLog(@"プレビュー画面");
 }
+
+// ==================================================================================
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+// ==================================================================================
+
+-(IBAction)saveImage {
+
+}
+
+// ==================================================================================
+
+
+// ==================================================================================
+
+// ==================================================================================
+
+// ==================================================================================
 
 /*
 #pragma mark - Navigation
