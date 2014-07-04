@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SINTYOKU/EditImageViewController.m"
-            timestampString = "426135269.681836"
+            timestampString = "426143859.854063"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
             landmarkName = "@implementation EditImageViewController"
             landmarkType = "3">
          </BreakpointContent>

@@ -61,10 +61,10 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     // タッチされた座標を取得
     UITouch* touch = [touches anyObject];
-    // imageViewの中
+    // ユーザーがタッチした座標を取得
     CGPoint point = [touch locationInView:imageView];
     
-    // スタンプを貼り付ける
+    // スタンプ画像を取得、貼り付ける
     currentStampView = [[UIImageView alloc]
                         initWithFrame:CGRectMake(point.x-5, point.y-5, 280, 140)];
     currentStampView.image = [UIImage imageNamed:@"test01.png"];
@@ -81,6 +81,8 @@
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
     // タッチされた座標を取得
     UITouch* touch = [touches anyObject];
+    
+    // ユーザーがドラッグした座標を取得
     CGPoint point = [touch locationInView:imageView];
     
     // スタンプの位置を変更する

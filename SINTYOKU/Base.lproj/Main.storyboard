@@ -119,6 +119,9 @@
                                 <state key="normal" title="削除">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="6Uo-dP-8sP" kind="push" id="yhT-qp-fGt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -134,6 +137,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wyl-c0-Vwm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1236" y="138"/>
+        </scene>
+        <!--Image Preview View Controller-->
+        <scene sceneID="8wS-1F-dAe">
+            <objects>
+                <viewController id="6Uo-dP-8sP" customClass="ImagePreviewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tx0-uL-PuQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="On2-ny-SR6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wVf-KQ-u2F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="j99-Ya-SEe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xcm-i9-JQS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1657" y="138"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="J1X-vj-1mE">
