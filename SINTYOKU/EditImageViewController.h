@@ -22,9 +22,6 @@
     UIImageView *currentStampView;  // 貼り付け中のスタンプ画像
     BOOL _isPressStamp;  // スタンプ貼り付け中かどうか
     
-    // プレビュー画面に渡す引数
-    UIImage *_PreviewImage;
-    
     
 }
 
@@ -38,9 +35,6 @@
 
 @property (nonatomic) UIImage *arguments;
 @property (weak, nonatomic) IBOutlet UIImageView *argumentsLabelImage;
-
-// 編集したUIImageをプレビューに入れる引数
-@property (nonatomic) UIImage *afterEditImage;
 
 
 @end
