@@ -34,10 +34,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
     self->imageView.image = _ShareImage;
 
-    
+    // _shareImageをjpgファイルに変換してSNSシェアに渡す
 }
+
 
 // ==================================================================================
 

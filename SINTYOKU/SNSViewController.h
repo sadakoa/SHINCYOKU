@@ -11,7 +11,7 @@
 #import "DCSocial.h"
 
 #define POST_TEXT     @"#進捗どうですか"
- #define POST_IMG_NAME   @"image.png"
+ #define POST_IMG_NAME  @"%@/test.png"
  #define POST_URL      @""
 
 @interface SNSViewController : UIViewController
