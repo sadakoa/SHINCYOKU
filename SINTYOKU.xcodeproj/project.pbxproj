@@ -32,6 +32,11 @@
 		A29768E119671CE60000B976 /* SNSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A29768E019671CE60000B976 /* SNSViewController.m */; };
 		A29768E3196724260000B976 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29768E2196724260000B976 /* Social.framework */; };
 		A29768E719679DD70000B976 /* DCSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = A29768E619679DD70000B976 /* DCSocial.m */; };
+		A29768F01967E1C70000B976 /* facobookButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A29768EB1967E1C70000B976 /* facobookButton.png */; };
+		A29768F11967E1C70000B976 /* LINEButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A29768EC1967E1C70000B976 /* LINEButton.png */; };
+		A29768F21967E1C70000B976 /* topButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A29768ED1967E1C70000B976 /* topButton.png */; };
+		A29768F31967E1C70000B976 /* twitterButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A29768EE1967E1C70000B976 /* twitterButton.png */; };
+		A29768F41967E1C70000B976 /* WallBg.png in Resources */ = {isa = PBXBuildFile; fileRef = A29768EF1967E1C70000B976 /* WallBg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +84,11 @@
 		A29768E2196724260000B976 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		A29768E519679DD70000B976 /* DCSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCSocial.h; sourceTree = "<group>"; };
 		A29768E619679DD70000B976 /* DCSocial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCSocial.m; sourceTree = "<group>"; };
+		A29768EB1967E1C70000B976 /* facobookButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facobookButton.png; sourceTree = "<group>"; };
+		A29768EC1967E1C70000B976 /* LINEButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LINEButton.png; sourceTree = "<group>"; };
+		A29768ED1967E1C70000B976 /* topButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topButton.png; sourceTree = "<group>"; };
+		A29768EE1967E1C70000B976 /* twitterButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitterButton.png; sourceTree = "<group>"; };
+		A29768EF1967E1C70000B976 /* WallBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WallBg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +224,11 @@
 		A29768EA1967C9240000B976 /* appDesignImage */ = {
 			isa = PBXGroup;
 			children = (
+				A29768EB1967E1C70000B976 /* facobookButton.png */,
+				A29768EC1967E1C70000B976 /* LINEButton.png */,
+				A29768ED1967E1C70000B976 /* topButton.png */,
+				A29768EE1967E1C70000B976 /* twitterButton.png */,
+				A29768EF1967E1C70000B976 /* WallBg.png */,
 			);
 			name = appDesignImage;
 			sourceTree = "<group>";
@@ -297,12 +312,17 @@
 				A29768981965003C0000B976 /* Images.xcassets in Resources */,
 				A297688A1965003C0000B976 /* InfoPlist.strings in Resources */,
 				A29768C91965A0A90000B976 /* not01.png in Resources */,
+				A29768F01967E1C70000B976 /* facobookButton.png in Resources */,
+				A29768F41967E1C70000B976 /* WallBg.png in Resources */,
 				A29768D219664EB10000B976 /* test02.png in Resources */,
 				A29768931965003C0000B976 /* Main.storyboard in Resources */,
 				A29768CB1965A0A90000B976 /* yes01.png in Resources */,
+				A29768F31967E1C70000B976 /* twitterButton.png in Resources */,
 				A29768C019652E670000B976 /* image.png in Resources */,
 				A29768D01965AEA20000B976 /* test01.png in Resources */,
 				A29768CA1965A0A90000B976 /* progress01.png in Resources */,
+				A29768F11967E1C70000B976 /* LINEButton.png in Resources */,
+				A29768F21967E1C70000B976 /* topButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
