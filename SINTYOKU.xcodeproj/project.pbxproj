@@ -31,6 +31,7 @@
 		A29768DE19666F960000B976 /* ImagePreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A29768DD19666F960000B976 /* ImagePreviewViewController.m */; };
 		A29768E119671CE60000B976 /* SNSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A29768E019671CE60000B976 /* SNSViewController.m */; };
 		A29768E3196724260000B976 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29768E2196724260000B976 /* Social.framework */; };
+		A29768E719679DD70000B976 /* DCSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = A29768E619679DD70000B976 /* DCSocial.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		A29768DF19671CE60000B976 /* SNSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSViewController.h; sourceTree = "<group>"; };
 		A29768E019671CE60000B976 /* SNSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSViewController.m; sourceTree = "<group>"; };
 		A29768E2196724260000B976 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		A29768E519679DD70000B976 /* DCSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCSocial.h; sourceTree = "<group>"; };
+		A29768E619679DD70000B976 /* DCSocial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCSocial.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,7 @@
 		A29768851965003C0000B976 /* SINTYOKU */ = {
 			isa = PBXGroup;
 			children = (
+				A29768E419679DD70000B976 /* Classes */,
 				A29768D119664EB10000B976 /* test02.png */,
 				A29768CF1965AEA20000B976 /* test01.png */,
 				A29768C61965A0A90000B976 /* not01.png */,
@@ -187,6 +191,15 @@
 				A29768A71965003C0000B976 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A29768E419679DD70000B976 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A29768E519679DD70000B976 /* DCSocial.h */,
+				A29768E619679DD70000B976 /* DCSocial.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A29768B61965034F0000B976 /* EditImageViewController.m in Sources */,
+				A29768E719679DD70000B976 /* DCSocial.m in Sources */,
 				A29768E119671CE60000B976 /* SNSViewController.m in Sources */,
 				A29768961965003C0000B976 /* ViewController.m in Sources */,
 				A29768901965003C0000B976 /* AppDelegate.m in Sources */,

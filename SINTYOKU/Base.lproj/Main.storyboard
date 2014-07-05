@@ -180,6 +180,7 @@
         <!--View Controller-->
         <scene sceneID="RbW-eN-55d">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fi7-zY-D0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="sdS-f2-TKL" customClass="SNSViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0vb-h5-Dzv"/>
@@ -196,7 +197,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="flipHorizontal" id="Lbd-Yn-OEM"/>
+                                    <segue destination="qyK-Nz-hsa" kind="modal" modalTransitionStyle="flipHorizontal" id="Nxr-AM-oDM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AO-WI-mVt">
@@ -231,9 +232,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fi7-zY-D0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2101" y="136"/>
+            <point key="canvasLocation" x="1019" y="988"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="J1X-vj-1mE">
@@ -259,7 +259,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="Lbd-Yn-OEM"/>
-    </inferredMetricsTieBreakers>
 </document>

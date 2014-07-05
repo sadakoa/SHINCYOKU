@@ -8,7 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import <Social/Social.h>
+#import "DCSocial.h"
 
 @interface SNSViewController : UIViewController
+<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+
+{
+    IBOutlet UILabel *label;
+    IBOutlet UIImageView *imageView;
+    IBOutlet UIView *UIView;
+    
+}
+
 
 @end
