@@ -140,6 +140,7 @@
 		A29768851965003C0000B976 /* SINTYOKU */ = {
 			isa = PBXGroup;
 			children = (
+				A29768EA1967C9240000B976 /* appDesignImage */,
 				A29768E419679DD70000B976 /* Classes */,
 				A29768E81967C83D0000B976 /* StampImage */,
 				A29768911965003C0000B976 /* Main.storyboard */,
@@ -208,6 +209,13 @@
 				A29768BF19652E670000B976 /* image.png */,
 			);
 			name = StampImage;
+			sourceTree = "<group>";
+		};
+		A29768EA1967C9240000B976 /* appDesignImage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = appDesignImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
