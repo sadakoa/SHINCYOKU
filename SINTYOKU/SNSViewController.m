@@ -15,6 +15,8 @@
 
 @implementation SNSViewController
 
+@synthesize ShareImage = _ShareImage;
+
 // ==================================================================================
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -32,6 +34,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self->imageView.image = _ShareImage;
+
     
 }
 

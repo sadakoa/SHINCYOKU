@@ -8,6 +8,9 @@
 
 #import "ImagePreviewViewController.h"
 
+// 遷移先
+#import "SNSViewController.h"
+
 @interface ImagePreviewViewController ()
 
 @end
@@ -95,7 +98,12 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    
+    //Segueの特定
+    if ( [[segue identifier] isEqualToString:@"SNSModalSegue"] ) {
+        SNSViewController *SNSViewController = [segue destinationViewController];
+        //ここで遷移先ビューのクラスの変数receiveStringに値を渡している
+        SNSViewController.ShareImage = _PreviewSaveImage;
+    }
 }
 
 
