@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SINTYOKU/SNSViewController.m"
-            timestampString = "426230383.761944"
+            timestampString = "426232038.995016"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "-postImageToLine:"
             landmarkType = "5">
          </BreakpointContent>

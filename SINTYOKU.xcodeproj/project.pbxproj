@@ -142,6 +142,7 @@
 			children = (
 				A29768E419679DD70000B976 /* Classes */,
 				A29768E81967C83D0000B976 /* StampImage */,
+				A29768E91967C87E0000B976 /* appDesignImage */,
 				A29768911965003C0000B976 /* Main.storyboard */,
 				A297688E1965003C0000B976 /* AppDelegate.h */,
 				A297688F1965003C0000B976 /* AppDelegate.m */,
@@ -149,12 +150,12 @@
 				A29768951965003C0000B976 /* ViewController.m */,
 				A29768B41965034F0000B976 /* EditImageViewController.h */,
 				A29768B51965034F0000B976 /* EditImageViewController.m */,
-				A29768971965003C0000B976 /* Images.xcassets */,
-				A29768861965003C0000B976 /* Supporting Files */,
 				A29768DC19666F960000B976 /* ImagePreviewViewController.h */,
 				A29768DD19666F960000B976 /* ImagePreviewViewController.m */,
 				A29768DF19671CE60000B976 /* SNSViewController.h */,
 				A29768E019671CE60000B976 /* SNSViewController.m */,
+				A29768971965003C0000B976 /* Images.xcassets */,
+				A29768861965003C0000B976 /* Supporting Files */,
 			);
 			path = SINTYOKU;
 			sourceTree = "<group>";
@@ -208,6 +209,13 @@
 				A29768BF19652E670000B976 /* image.png */,
 			);
 			name = StampImage;
+			sourceTree = "<group>";
+		};
+		A29768E91967C87E0000B976 /* appDesignImage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = appDesignImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

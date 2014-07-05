@@ -49,6 +49,7 @@
 // Facebookへ投稿
 - (IBAction)postToFacebook:(id)sender
 {
+    
 //    [DCSocial postToFacebook:self text:POST_TEXT imageName:POST_IMG_NAME url:POST_URL];
     SLComposeViewController *vc = [SLComposeViewController
                                    composeViewControllerForServiceType:SLServiceTypeFacebook];
