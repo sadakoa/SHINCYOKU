@@ -47,8 +47,6 @@
 		A297691A1968091F0000B976 /* SINTYOKU@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A29769191968091F0000B976 /* SINTYOKU@2x.png */; };
 		A2976920196834380000B976 /* EAIntroPage.m in Sources */ = {isa = PBXBuildFile; fileRef = A297691D196834380000B976 /* EAIntroPage.m */; };
 		A2976921196834380000B976 /* EAIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = A297691F196834380000B976 /* EAIntroView.m */; };
-		A2976923196837820000B976 /* bg1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2976922196837820000B976 /* bg1@2x.png */; };
-		A2976926196837E20000B976 /* EAIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2976925196837E20000B976 /* EAIntroView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,9 +111,6 @@
 		A297691D196834380000B976 /* EAIntroPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAIntroPage.m; sourceTree = "<group>"; };
 		A297691E196834380000B976 /* EAIntroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAIntroView.h; sourceTree = "<group>"; };
 		A297691F196834380000B976 /* EAIntroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAIntroView.m; sourceTree = "<group>"; };
-		A2976922196837820000B976 /* bg1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg1@2x.png"; sourceTree = "<group>"; };
-		A2976924196837E20000B976 /* EAIntroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAIntroView.h; sourceTree = "<group>"; };
-		A2976925196837E20000B976 /* EAIntroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAIntroView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +172,6 @@
 		A29768851965003C0000B976 /* SINTYOKU */ = {
 			isa = PBXGroup;
 			children = (
-				A2976922196837820000B976 /* bg1@2x.png */,
 				A297691B196834380000B976 /* EAIntroView */,
 				A29768EA1967C9240000B976 /* appDesignImage */,
 				A29768E419679DD70000B976 /* Classes */,
@@ -195,8 +189,6 @@
 				A29768DD19666F960000B976 /* ImagePreviewViewController.m */,
 				A29768DF19671CE60000B976 /* SNSViewController.h */,
 				A29768E019671CE60000B976 /* SNSViewController.m */,
-				A2976924196837E20000B976 /* EAIntroView.h */,
-				A2976925196837E20000B976 /* EAIntroView.m */,
 			);
 			path = SINTYOKU;
 			sourceTree = "<group>";
@@ -362,7 +354,6 @@
 				A29768981965003C0000B976 /* Images.xcassets in Resources */,
 				A297688A1965003C0000B976 /* InfoPlist.strings in Resources */,
 				A2976918196800980000B976 /* tab02@2x.png in Resources */,
-				A2976923196837820000B976 /* bg1@2x.png in Resources */,
 				A2976912196800980000B976 /* sns02@2x.png in Resources */,
 				A29768C91965A0A90000B976 /* not01.png in Resources */,
 				A29768D219664EB10000B976 /* test02.png in Resources */,
@@ -409,7 +400,6 @@
 				A29768DE19666F960000B976 /* ImagePreviewViewController.m in Sources */,
 				A297688C1965003C0000B976 /* main.m in Sources */,
 				A2976920196834380000B976 /* EAIntroPage.m in Sources */,
-				A2976926196837E20000B976 /* EAIntroView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

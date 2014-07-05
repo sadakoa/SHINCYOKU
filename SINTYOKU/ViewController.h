@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "EAIntroView.h"
 
 @interface ViewController : UIViewController
-<UIImagePickerControllerDelegate, UINavigationControllerDelegate, EAIntroDelegate>
+<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 {
     IBOutlet UILabel *label;
