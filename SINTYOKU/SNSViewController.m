@@ -6,6 +6,7 @@
 //  Copyright (c) 2014年 sadakoa. All rights reserved.
 //
 
+#import <Social/Social.h>
 #import "SNSViewController.h"
 
 @interface SNSViewController ()
@@ -34,6 +35,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 /*
 #pragma mark - Navigation
