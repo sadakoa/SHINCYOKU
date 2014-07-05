@@ -91,8 +91,13 @@
     [self performSegueWithIdentifier:@"SNSModalSegue" sender:self];
 }
 
-
 // ==================================================================================
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+}
+
 
 // ==================================================================================
 
