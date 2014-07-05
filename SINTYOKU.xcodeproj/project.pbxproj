@@ -43,6 +43,7 @@
 		A29768FC1967F6A60000B976 /* frontbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = A29768FA1967F6A60000B976 /* frontbutton.png */; };
 		A29768FF1967FD5F0000B976 /* librarybutton.png in Resources */ = {isa = PBXBuildFile; fileRef = A29768FD1967FD5F0000B976 /* librarybutton.png */; };
 		A29769001967FD5F0000B976 /* photobutton.png in Resources */ = {isa = PBXBuildFile; fileRef = A29768FE1967FD5F0000B976 /* photobutton.png */; };
+		A29769021967FF8F0000B976 /* test@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A29769011967FF8F0000B976 /* test@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		A29768FA1967F6A60000B976 /* frontbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frontbutton.png; sourceTree = "<group>"; };
 		A29768FD1967FD5F0000B976 /* librarybutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = librarybutton.png; sourceTree = "<group>"; };
 		A29768FE1967FD5F0000B976 /* photobutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photobutton.png; sourceTree = "<group>"; };
+		A29769011967FF8F0000B976 /* test@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 		A29768EA1967C9240000B976 /* appDesignImage */ = {
 			isa = PBXGroup;
 			children = (
+				A29769011967FF8F0000B976 /* test@2x.png */,
 				A29768FD1967FD5F0000B976 /* librarybutton.png */,
 				A29768FE1967FD5F0000B976 /* photobutton.png */,
 				A29768F91967F6A60000B976 /* backbutton.png */,
@@ -339,6 +342,7 @@
 				A29768F41967E1C70000B976 /* WallBg.png in Resources */,
 				A29768D219664EB10000B976 /* test02.png in Resources */,
 				A29768FC1967F6A60000B976 /* frontbutton.png in Resources */,
+				A29769021967FF8F0000B976 /* test@2x.png in Resources */,
 				A29768931965003C0000B976 /* Main.storyboard in Resources */,
 				A29768CB1965A0A90000B976 /* yes01.png in Resources */,
 				A29768F31967E1C70000B976 /* twitterButton.png in Resources */,
