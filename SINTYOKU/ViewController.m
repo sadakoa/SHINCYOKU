@@ -27,6 +27,8 @@
     [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
     
     // self.navigationItem.title = @"進捗!!";
+    UIImageView *titleImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"SINTYOKU.png"]];
+    self.navigationItem.titleView = titleImageView;
     self.navigationController.navigationBar.tintColor =
     [UIColor whiteColor];
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:236/255.0 green:112/255.0 blue:97/255.0 alpha:1];

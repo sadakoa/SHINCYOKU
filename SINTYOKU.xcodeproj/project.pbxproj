@@ -44,6 +44,7 @@
 		A2976916196800980000B976 /* state02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A297690B196800980000B976 /* state02@2x.png */; };
 		A2976917196800980000B976 /* tab01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A297690C196800980000B976 /* tab01@2x.png */; };
 		A2976918196800980000B976 /* tab02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A297690D196800980000B976 /* tab02@2x.png */; };
+		A297691A1968091F0000B976 /* SINTYOKU@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A29769191968091F0000B976 /* SINTYOKU@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		A297690B196800980000B976 /* state02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "state02@2x.png"; sourceTree = "<group>"; };
 		A297690C196800980000B976 /* tab01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab01@2x.png"; sourceTree = "<group>"; };
 		A297690D196800980000B976 /* tab02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab02@2x.png"; sourceTree = "<group>"; };
+		A29769191968091F0000B976 /* SINTYOKU@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SINTYOKU@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +240,7 @@
 		A29768EA1967C9240000B976 /* appDesignImage */ = {
 			isa = PBXGroup;
 			children = (
+				A29769191968091F0000B976 /* SINTYOKU@2x.png */,
 				A2976903196800980000B976 /* Bg@2x.png */,
 				A2976904196800980000B976 /* home01@2x.png */,
 				A2976905196800980000B976 /* home02@2x.png */,
@@ -346,6 +349,7 @@
 				A2976911196800980000B976 /* sns01@2x.png in Resources */,
 				A297690F196800980000B976 /* home01@2x.png in Resources */,
 				A297690E196800980000B976 /* Bg@2x.png in Resources */,
+				A297691A1968091F0000B976 /* SINTYOKU@2x.png in Resources */,
 				A29768D01965AEA20000B976 /* test01.png in Resources */,
 				A2976915196800980000B976 /* state01@2x.png in Resources */,
 				A29768CA1965A0A90000B976 /* progress01.png in Resources */,
