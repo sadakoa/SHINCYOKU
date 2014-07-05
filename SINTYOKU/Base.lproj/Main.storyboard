@@ -19,7 +19,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1g-6m-Yp3">
                                 <rect key="frame" x="30" y="253" width="110" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="photobutton.png">
+                                <state key="normal" image="home01.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -29,7 +29,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mse-8s-ieT">
                                 <rect key="frame" x="180" y="253" width="110" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="librarybutton.png">
+                                <state key="normal" image="home02.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -69,28 +69,28 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wn0-Yg-QhV">
                                 <rect key="frame" x="160" y="503" width="160" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="stampButton.png">
+                                <state key="normal" title="Button" image="tab02.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gf9-zP-A6W">
                                 <rect key="frame" x="0.0" y="503" width="160" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="deleteButton.png">
+                                <state key="normal" title="Button" image="tab01.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSR-Qw-Eye">
                                 <rect key="frame" x="245" y="75" width="60" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="frontbutton.png">
+                                <state key="normal" title="Button" image="state02.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0L-JR-SSj">
                                 <rect key="frame" x="15" y="75" width="60" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="backbutton.png">
+                                <state key="normal" title="Button" image="state01.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -166,7 +166,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSJ-XN-9qb">
                                 <rect key="frame" x="110" y="496" width="100" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="topButton.png">
+                                <state key="normal" image="sns04.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -176,7 +176,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AO-WI-mVt">
                                 <rect key="frame" x="39" y="260" width="243" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Twitterでシェア" image="twitterButton.png">
+                                <state key="normal" title="Twitterでシェア" image="sns01.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -186,7 +186,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qwr-QF-rgC">
                                 <rect key="frame" x="39" y="337" width="243" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Facebookでシェア" image="facobookButton.png">
+                                <state key="normal" title="Facebookでシェア" image="sns02.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -196,14 +196,14 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3j7-sL-zMT">
                                 <rect key="frame" x="39" y="414" width="243" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="LINEでシェア" image="LINEButton.png">
+                                <state key="normal" title="LINEでシェア" image="sns03.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="postImageToLine:" destination="sdS-f2-TKL" eventType="touchUpInside" id="fpc-6w-bYa"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WallBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="QsM-tt-TuN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="QsM-tt-TuN">
                                 <rect key="frame" x="15" y="53" width="290" height="182"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -243,17 +243,17 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LINEButton.png" width="487" height="122"/>
-        <image name="WallBg.png" width="580" height="365"/>
-        <image name="backbutton.png" width="160" height="97"/>
-        <image name="deleteButton.png" width="320" height="130"/>
-        <image name="facobookButton.png" width="487" height="122"/>
-        <image name="frontbutton.png" width="160" height="97"/>
-        <image name="librarybutton.png" width="220" height="229"/>
-        <image name="photobutton.png" width="220" height="229"/>
-        <image name="stampButton.png" width="320" height="130"/>
-        <image name="topButton.png" width="199" height="97"/>
-        <image name="twitterButton.png" width="487" height="122"/>
+        <image name="Bg.png" width="290" height="182"/>
+        <image name="home01.png" width="110" height="114"/>
+        <image name="home02.png" width="110" height="114"/>
+        <image name="sns01.png" width="243" height="61"/>
+        <image name="sns02.png" width="243" height="61"/>
+        <image name="sns03.png" width="243" height="61"/>
+        <image name="sns04.png" width="99" height="48"/>
+        <image name="state01.png" width="80" height="48"/>
+        <image name="state02.png" width="80" height="48"/>
+        <image name="tab01.png" width="160" height="65"/>
+        <image name="tab02.png" width="160" height="65"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
