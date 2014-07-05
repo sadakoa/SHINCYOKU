@@ -41,6 +41,8 @@
 		A29768F81967F4E50000B976 /* stampButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A29768F61967F4E50000B976 /* stampButton.png */; };
 		A29768FB1967F6A60000B976 /* backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = A29768F91967F6A60000B976 /* backbutton.png */; };
 		A29768FC1967F6A60000B976 /* frontbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = A29768FA1967F6A60000B976 /* frontbutton.png */; };
+		A29768FF1967FD5F0000B976 /* librarybutton.png in Resources */ = {isa = PBXBuildFile; fileRef = A29768FD1967FD5F0000B976 /* librarybutton.png */; };
+		A29769001967FD5F0000B976 /* photobutton.png in Resources */ = {isa = PBXBuildFile; fileRef = A29768FE1967FD5F0000B976 /* photobutton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,8 @@
 		A29768F61967F4E50000B976 /* stampButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stampButton.png; sourceTree = "<group>"; };
 		A29768F91967F6A60000B976 /* backbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backbutton.png; sourceTree = "<group>"; };
 		A29768FA1967F6A60000B976 /* frontbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frontbutton.png; sourceTree = "<group>"; };
+		A29768FD1967FD5F0000B976 /* librarybutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = librarybutton.png; sourceTree = "<group>"; };
+		A29768FE1967FD5F0000B976 /* photobutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photobutton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +236,8 @@
 		A29768EA1967C9240000B976 /* appDesignImage */ = {
 			isa = PBXGroup;
 			children = (
+				A29768FD1967FD5F0000B976 /* librarybutton.png */,
+				A29768FE1967FD5F0000B976 /* photobutton.png */,
 				A29768F91967F6A60000B976 /* backbutton.png */,
 				A29768FA1967F6A60000B976 /* frontbutton.png */,
 				A29768F51967F4E50000B976 /* deleteButton.png */,
@@ -325,7 +331,9 @@
 				A297688A1965003C0000B976 /* InfoPlist.strings in Resources */,
 				A29768F71967F4E50000B976 /* deleteButton.png in Resources */,
 				A29768F81967F4E50000B976 /* stampButton.png in Resources */,
+				A29769001967FD5F0000B976 /* photobutton.png in Resources */,
 				A29768C91965A0A90000B976 /* not01.png in Resources */,
+				A29768FF1967FD5F0000B976 /* librarybutton.png in Resources */,
 				A29768F01967E1C70000B976 /* facobookButton.png in Resources */,
 				A29768FB1967F6A60000B976 /* backbutton.png in Resources */,
 				A29768F41967E1C70000B976 /* WallBg.png in Resources */,
