@@ -49,36 +49,46 @@
 // Facebookへ投稿
 - (IBAction)postToFacebook:(id)sender
 {
-    [DCSocial postToFacebook:self text:POST_TEXT imageName:POST_IMG_NAME url:POST_URL];
+//    [DCSocial postToFacebook:self text:POST_TEXT imageName:POST_IMG_NAME url:POST_URL];
+    SLComposeViewController *vc = [SLComposeViewController
+                                   composeViewControllerForServiceType:SLServiceTypeFacebook];
+    [vc setInitialText:@"進捗どうですか"];
+    [vc addImage:_ShareImage];
+    [vc addURL:[NSURL URLWithString:@""]];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 // ==================================================================================
-
-// Twitterで投稿
+//
+//// Twitterで投稿
 - (IBAction)postToTwitter:(id)sender
 {
-    [DCSocial postToTwitter:self text:POST_TEXT imageName:POST_IMG_NAME url:POST_URL];
+    //[DCSocial postToTwitter:self text:POST_TEXT imageName:POST_IMG_NAME url:POST_URL];
+        SLComposeViewController *vc = [SLComposeViewController
+                                       composeViewControllerForServiceType:SLServiceTypeTwitter];
+        [vc setInitialText:@"#進捗どうですか"];
+        [vc addImage:_ShareImage];
+        [vc addURL:[NSURL URLWithString:@""]];
+        [self presentViewController:vc animated:YES completion:nil];
 }
-
-// ==================================================================================
-
-// LINEへ JPEG画像投稿
+//
+//// ==================================================================================
+//
+//// LINEへ JPEG画像投稿
 - (IBAction)postImageToLine:(id)sender
 {
-    typedef NS_ENUM(NSUInteger, imageExtId) {
-        JPEG = 0,
-        PNG  = 1
-    };
+    // この例ではUIImageクラスの_resultImageを送る
+    UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+    [pasteboard setData:UIImagePNGRepresentation(_ShareImage)
+     　　forPasteboardType:@"public.png"];
     
-    [DCSocial postImageToLine:POST_IMG_NAME imageType:JPEG];
-}
-
-// ==================================================================================
-
-// メール/Twitter/Facebook共有
-- (IBAction)share:(id)sender
-{
-    [DCSocial socialShare:self shareText:POST_TEXT shareImage:[UIImage imageNamed:POST_IMG_NAME]];
+    NSLog(@"line成功");
+    // pasteboardを使ってパスを生成
+    NSString *LineUrlString = [NSString stringWithFormat:@"line://msg/image/%@",
+                               　　　　　　　　　　　　　　　pasteboard.name];
+    // URLスキームを使ってLINEを起動
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:LineUrlString]];
+    
 }
 
 // ==================================================================================

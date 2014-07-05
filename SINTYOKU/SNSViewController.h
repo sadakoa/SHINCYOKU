@@ -10,9 +10,9 @@
 #import <Social/Social.h>
 #import "DCSocial.h"
 
-#define POST_TEXT     @"#進捗どうですか"
- #define POST_IMG_NAME  @"share.png"
- #define POST_URL      @""
+//#define POST_TEXT     @"#進捗どうですか"
+// #define POST_IMG_NAME  @"share.png"
+// #define POST_URL      @""
 
 @interface SNSViewController : UIViewController
 <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
@@ -34,12 +34,10 @@
 
 // twitter投稿
 - (IBAction)postToTwitter:(id)sender;
-
+//
 // ライン画像投稿
 - (IBAction)postImageToLine:(id)sender;
 
-// メール投稿(及びTwitterとFacebook)
-- (IBAction)share:(id)sender;
 
 
 @end
