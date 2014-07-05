@@ -15,6 +15,8 @@
 
 @implementation SNSViewController
 
+// ==================================================================================
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -24,17 +26,55 @@
     return self;
 }
 
+// ==================================================================================
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
 
+// ==================================================================================
+
+// Facebookへ投稿
+- (IBAction)postToFacebook:(id)sender
+{
+    [DCSocial postToFacebook:self text:POST_TEXT imageName:POST_IMG_NAME url:POST_URL];
+}
+
+// ==================================================================================
+
+// Twitterで投稿
+- (IBAction)postToTwitter:(id)sender
+{
+    [DCSocial postToTwitter:self text:POST_TEXT imageName:POST_IMG_NAME url:POST_URL];
+}
+
+// ==================================================================================
+
+// LINEへ JPEG画像投稿
+- (IBAction)postImageToLine:(id)sender
+{
+   // [DCSocial postImageToLine:POST_IMG_NAME imageType:JPEG];
+}
+
+// ==================================================================================
+
+// メール/Twitter/Facebook共有
+- (IBAction)share:(id)sender
+{
+    [DCSocial socialShare:self shareText:POST_TEXT shareImage:[UIImage imageNamed:POST_IMG_NAME]];
+}
+
+// ==================================================================================
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+// ==================================================================================
 
 
 
