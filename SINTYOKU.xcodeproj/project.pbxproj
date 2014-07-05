@@ -45,6 +45,8 @@
 		A2976917196800980000B976 /* tab01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A297690C196800980000B976 /* tab01@2x.png */; };
 		A2976918196800980000B976 /* tab02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A297690D196800980000B976 /* tab02@2x.png */; };
 		A297691A1968091F0000B976 /* SINTYOKU@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A29769191968091F0000B976 /* SINTYOKU@2x.png */; };
+		A2976920196834380000B976 /* EAIntroPage.m in Sources */ = {isa = PBXBuildFile; fileRef = A297691D196834380000B976 /* EAIntroPage.m */; };
+		A2976921196834380000B976 /* EAIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = A297691F196834380000B976 /* EAIntroView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +107,10 @@
 		A297690C196800980000B976 /* tab01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab01@2x.png"; sourceTree = "<group>"; };
 		A297690D196800980000B976 /* tab02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab02@2x.png"; sourceTree = "<group>"; };
 		A29769191968091F0000B976 /* SINTYOKU@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SINTYOKU@2x.png"; sourceTree = "<group>"; };
+		A297691C196834380000B976 /* EAIntroPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAIntroPage.h; sourceTree = "<group>"; };
+		A297691D196834380000B976 /* EAIntroPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAIntroPage.m; sourceTree = "<group>"; };
+		A297691E196834380000B976 /* EAIntroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAIntroView.h; sourceTree = "<group>"; };
+		A297691F196834380000B976 /* EAIntroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAIntroView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +172,7 @@
 		A29768851965003C0000B976 /* SINTYOKU */ = {
 			isa = PBXGroup;
 			children = (
+				A297691B196834380000B976 /* EAIntroView */,
 				A29768EA1967C9240000B976 /* appDesignImage */,
 				A29768E419679DD70000B976 /* Classes */,
 				A29768E81967C83D0000B976 /* StampImage */,
@@ -255,6 +262,17 @@
 				A29769011967FF8F0000B976 /* test@2x.png */,
 			);
 			name = appDesignImage;
+			sourceTree = "<group>";
+		};
+		A297691B196834380000B976 /* EAIntroView */ = {
+			isa = PBXGroup;
+			children = (
+				A297691C196834380000B976 /* EAIntroPage.h */,
+				A297691D196834380000B976 /* EAIntroPage.m */,
+				A297691E196834380000B976 /* EAIntroView.h */,
+				A297691F196834380000B976 /* EAIntroView.m */,
+			);
+			path = EAIntroView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,11 +393,13 @@
 			files = (
 				A29768B61965034F0000B976 /* EditImageViewController.m in Sources */,
 				A29768E719679DD70000B976 /* DCSocial.m in Sources */,
+				A2976921196834380000B976 /* EAIntroView.m in Sources */,
 				A29768E119671CE60000B976 /* SNSViewController.m in Sources */,
 				A29768961965003C0000B976 /* ViewController.m in Sources */,
 				A29768901965003C0000B976 /* AppDelegate.m in Sources */,
 				A29768DE19666F960000B976 /* ImagePreviewViewController.m in Sources */,
 				A297688C1965003C0000B976 /* main.m in Sources */,
+				A2976920196834380000B976 /* EAIntroPage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
