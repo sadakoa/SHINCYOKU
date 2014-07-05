@@ -141,12 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				A29768E419679DD70000B976 /* Classes */,
-				A29768D119664EB10000B976 /* test02.png */,
-				A29768CF1965AEA20000B976 /* test01.png */,
-				A29768C61965A0A90000B976 /* not01.png */,
-				A29768C71965A0A90000B976 /* progress01.png */,
-				A29768C81965A0A90000B976 /* yes01.png */,
-				A29768BF19652E670000B976 /* image.png */,
+				A29768E81967C83D0000B976 /* StampImage */,
 				A29768911965003C0000B976 /* Main.storyboard */,
 				A297688E1965003C0000B976 /* AppDelegate.h */,
 				A297688F1965003C0000B976 /* AppDelegate.m */,
@@ -200,6 +195,19 @@
 				A29768E619679DD70000B976 /* DCSocial.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		A29768E81967C83D0000B976 /* StampImage */ = {
+			isa = PBXGroup;
+			children = (
+				A29768D119664EB10000B976 /* test02.png */,
+				A29768CF1965AEA20000B976 /* test01.png */,
+				A29768C61965A0A90000B976 /* not01.png */,
+				A29768C71965A0A90000B976 /* progress01.png */,
+				A29768C81965A0A90000B976 /* yes01.png */,
+				A29768BF19652E670000B976 /* image.png */,
+			);
+			name = StampImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
