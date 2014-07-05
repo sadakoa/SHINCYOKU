@@ -60,7 +60,12 @@
 // LINEへ JPEG画像投稿
 - (IBAction)postImageToLine:(id)sender
 {
-   // [DCSocial postImageToLine:POST_IMG_NAME imageType:JPEG];
+    typedef NS_ENUM(NSUInteger, imageExtId) {
+        JPEG = 0,
+        PNG  = 1
+    };
+    
+    [DCSocial postImageToLine:POST_IMG_NAME imageType:JPEG];
 }
 
 // ==================================================================================
