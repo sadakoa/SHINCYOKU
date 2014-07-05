@@ -11,7 +11,7 @@
 #import "DCSocial.h"
 
 #define POST_TEXT     @"#進捗どうですか"
- #define POST_IMG_NAME  @"%@/test.png"
+ #define POST_IMG_NAME  @"share.png"
  #define POST_URL      @""
 
 @interface SNSViewController : UIViewController
@@ -26,6 +26,7 @@
 
 // シェアの画像
 @property (nonatomic) UIImage *ShareImage;
+@property (nonatomic) UIImage *oni;
 @property (weak, nonatomic) IBOutlet UIImageView *ShareLabelImage;
 
 // facebook投稿

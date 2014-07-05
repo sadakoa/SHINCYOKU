@@ -37,6 +37,9 @@
     
     self->imageView.image = _ShareImage;
 
+        // share imgを作らなければいけない
+   
+
     // _shareImageをjpgファイルに変換してSNSシェアに渡す
 }
 
