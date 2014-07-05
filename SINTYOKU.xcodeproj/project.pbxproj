@@ -37,6 +37,10 @@
 		A29768F21967E1C70000B976 /* topButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A29768ED1967E1C70000B976 /* topButton.png */; };
 		A29768F31967E1C70000B976 /* twitterButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A29768EE1967E1C70000B976 /* twitterButton.png */; };
 		A29768F41967E1C70000B976 /* WallBg.png in Resources */ = {isa = PBXBuildFile; fileRef = A29768EF1967E1C70000B976 /* WallBg.png */; };
+		A29768F71967F4E50000B976 /* deleteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A29768F51967F4E50000B976 /* deleteButton.png */; };
+		A29768F81967F4E50000B976 /* stampButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A29768F61967F4E50000B976 /* stampButton.png */; };
+		A29768FB1967F6A60000B976 /* backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = A29768F91967F6A60000B976 /* backbutton.png */; };
+		A29768FC1967F6A60000B976 /* frontbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = A29768FA1967F6A60000B976 /* frontbutton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +93,10 @@
 		A29768ED1967E1C70000B976 /* topButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topButton.png; sourceTree = "<group>"; };
 		A29768EE1967E1C70000B976 /* twitterButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitterButton.png; sourceTree = "<group>"; };
 		A29768EF1967E1C70000B976 /* WallBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WallBg.png; sourceTree = "<group>"; };
+		A29768F51967F4E50000B976 /* deleteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deleteButton.png; sourceTree = "<group>"; };
+		A29768F61967F4E50000B976 /* stampButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stampButton.png; sourceTree = "<group>"; };
+		A29768F91967F6A60000B976 /* backbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backbutton.png; sourceTree = "<group>"; };
+		A29768FA1967F6A60000B976 /* frontbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frontbutton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +232,10 @@
 		A29768EA1967C9240000B976 /* appDesignImage */ = {
 			isa = PBXGroup;
 			children = (
+				A29768F91967F6A60000B976 /* backbutton.png */,
+				A29768FA1967F6A60000B976 /* frontbutton.png */,
+				A29768F51967F4E50000B976 /* deleteButton.png */,
+				A29768F61967F4E50000B976 /* stampButton.png */,
 				A29768EB1967E1C70000B976 /* facobookButton.png */,
 				A29768EC1967E1C70000B976 /* LINEButton.png */,
 				A29768ED1967E1C70000B976 /* topButton.png */,
@@ -311,10 +323,14 @@
 			files = (
 				A29768981965003C0000B976 /* Images.xcassets in Resources */,
 				A297688A1965003C0000B976 /* InfoPlist.strings in Resources */,
+				A29768F71967F4E50000B976 /* deleteButton.png in Resources */,
+				A29768F81967F4E50000B976 /* stampButton.png in Resources */,
 				A29768C91965A0A90000B976 /* not01.png in Resources */,
 				A29768F01967E1C70000B976 /* facobookButton.png in Resources */,
+				A29768FB1967F6A60000B976 /* backbutton.png in Resources */,
 				A29768F41967E1C70000B976 /* WallBg.png in Resources */,
 				A29768D219664EB10000B976 /* test02.png in Resources */,
+				A29768FC1967F6A60000B976 /* frontbutton.png in Resources */,
 				A29768931965003C0000B976 /* Main.storyboard in Resources */,
 				A29768CB1965A0A90000B976 /* yes01.png in Resources */,
 				A29768F31967E1C70000B976 /* twitterButton.png in Resources */,

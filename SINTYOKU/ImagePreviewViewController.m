@@ -36,7 +36,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationItem.title = @"Preview";
+    self.navigationItem.title = @"プレビュー";
+    [UIColor whiteColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:236/255.0 green:112/255.0 blue:97/255.0 alpha:1];
+    [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
+
     
     // バーの色を変える
    // [UINavigationBar appearance].barTintColor = [UIColor colorWithRed:0.000 green:0.549 blue:0.890 alpha:1.000];
@@ -81,7 +85,7 @@
         message = @"保存に失敗した。";
     } else {
         // 保存成功時の処理
-        message = @"保存に成功しました";
+        message = @"画像を保存しました";
     }
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil
                                                     message:message

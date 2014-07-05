@@ -24,8 +24,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
     
-    self.navigationItem.title = @"SINTYOKU!!";
+    // self.navigationItem.title = @"進捗!!";
+    self.navigationController.navigationBar.tintColor =
+    [UIColor whiteColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:236/255.0 green:112/255.0 blue:97/255.0 alpha:1];
 
 }
 

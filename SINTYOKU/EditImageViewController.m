@@ -40,7 +40,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.title = @"Edit";
+    
+    self.navigationItem.title = @"編集";
+    [UIColor whiteColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:236/255.0 green:112/255.0 blue:97/255.0 alpha:1];
+    [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
+
+    
+    //　labelの色
+
     //[UINavigationBar appearance].barTintColor = [UIColor colorWithRed:0.000 green:0.549 blue:0.890 alpha:1.000];
 
     // Do any additional setup after loading the view.
@@ -80,7 +88,7 @@
     
     // スタンプ画像を取得、貼り付ける
     currentStampView = [[UIImageView alloc]
-                        initWithFrame:CGRectMake(point.x-5, point.y-5, 280, 140)];
+                        initWithFrame:CGRectMake(point.x-5, point.y-5, 280, 130)];
     currentStampView.image = [UIImage imageNamed:@"test01.png"];
     [self.view addSubview:currentStampView];
     
@@ -101,7 +109,7 @@
     
     // スタンプの位置を変更する
     if (_isPressStamp) {
-        currentStampView.frame = CGRectMake(point.x-20, point.y-20, 280, 140);
+        currentStampView.frame = CGRectMake(point.x-20, point.y-20, 280, 130);
     }
 }
 

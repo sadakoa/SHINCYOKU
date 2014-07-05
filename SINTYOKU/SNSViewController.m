@@ -82,8 +82,7 @@
     [pasteboard setData:UIImagePNGRepresentation(_ShareImage)
      　　forPasteboardType:@"public.png"];
     
-    NSLog(@"line成功");
-    // pasteboardを使ってパスを生成
+       // pasteboardを使ってパスを生成
     NSString *LineUrlString = [NSString stringWithFormat:@"line://msg/image/%@",
                                　　　　　　　　　　　　　　　pasteboard.name];
     // URLスキームを使ってLINEを起動
