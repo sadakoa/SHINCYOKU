@@ -146,7 +146,6 @@
         <!--View Controller-->
         <scene sceneID="RbW-eN-55d">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fi7-zY-D0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="sdS-f2-TKL" customClass="SNSViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0vb-h5-Dzv"/>
@@ -208,6 +207,7 @@
                         <outlet property="imageView" destination="jub-GI-KoP" id="ZTI-SI-YPL"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fi7-zY-D0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1019" y="988"/>
         </scene>
