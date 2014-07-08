@@ -109,7 +109,7 @@
     
     // スタンプの位置を変更する
     if (_isPressStamp) {
-        currentStampView.frame = CGRectMake(point.x-20, point.y-20, 280, 130);
+        currentStampView.frame = CGRectMake(point.x-5, point.y-5, 280, 130);
     }
 }
 
