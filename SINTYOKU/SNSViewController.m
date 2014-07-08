@@ -70,6 +70,7 @@
         [vc addImage:_ShareImage];
         [vc addURL:[NSURL URLWithString:@""]];
         [self presentViewController:vc animated:YES completion:nil];
+    
 }
 //
 //// ==================================================================================
