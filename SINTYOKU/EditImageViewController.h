@@ -17,10 +17,10 @@
     IBOutlet UIView *UIView;
     
     // 貼り付け中のスタンプ画像
-    UIImageView *currentStampView;
+  //  UIImageView *currentStampView;
     
     // スタンプ貼り付け中かどうか
-    BOOL _isPressStamp;
+ //   BOOL _isPressStamp;
     
 }
 
