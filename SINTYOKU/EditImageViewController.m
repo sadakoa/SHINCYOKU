@@ -20,6 +20,9 @@
 
 @synthesize arguments = _argumentsImage;
 
+// イニシャライズ
+@synthesize stampUIImageView = _stampUIImageView;
+
 
 // ==================================================================================
 
@@ -46,7 +49,6 @@
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:236/255.0 green:112/255.0 blue:97/255.0 alpha:1];
     [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
 
-    
     //　labelの色
 
     //[UINavigationBar appearance].barTintColor = [UIColor colorWithRed:0.000 green:0.549 blue:0.890 alpha:1.000];
@@ -56,11 +58,12 @@
     self->imageView.image = _argumentsImage;
     NSLog(@"imageViewにライブラリから選んだ画像をセット");
     
+    // スタンプ画像は最初はセットしない
     currentStampView = nil;
+    
+    // 最初はスタンプモードではない
     _isPressStamp = NO;
-    
-
-    
+        
 }
 
 // ==================================================================================
@@ -81,9 +84,9 @@
 
 // ユーザによりViewへのタッチが開始したときに呼び出されるメソッド
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
     // タッチされた座標を取得
     UITouch* touch = [touches anyObject];
-    // ユーザーがタッチした座標を取得
     CGPoint point = [touch locationInView:imageView];
     
     // スタンプ画像を取得、貼り付ける
@@ -94,17 +97,15 @@
     
     // スタンプモード起動
      _isPressStamp = YES;
-    
 }
 
 // ==================================================================================
 
 // ユーザがドラッグしたときに呼び出されるメソッド
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    
     // タッチされた座標を取得
     UITouch* touch = [touches anyObject];
-    
-    // ユーザーがドラッグした座標を取得
     CGPoint point = [touch locationInView:imageView];
     
     // スタンプの位置を変更する
@@ -117,6 +118,7 @@
 
 // ユーザがタッチを終了したときに呼び出されるメソッド
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    
     // スタンプモード終了（スタンプを確定する）
     _isPressStamp = NO;
 }
@@ -125,6 +127,7 @@
 
 // ユーザーが他のアクションで完全に終了した時に呼び出されるメソッド
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
+    
     // スタンプモード終了（スタンプを確定する）
     _isPressStamp = NO;
     

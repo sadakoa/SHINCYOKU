@@ -16,26 +16,21 @@
     IBOutlet UIImageView *imageView;
     IBOutlet UIView *UIView;
     
-    //前の画面から受け取る引数 要らないかも
-    // UIImage *_arguments;
+    // 貼り付け中のスタンプ画像
+    UIImageView *currentStampView;
     
-    UIImageView *currentStampView;  // 貼り付け中のスタンプ画像
-    BOOL _isPressStamp;  // スタンプ貼り付け中かどうか
-    
+    // スタンプ貼り付け中かどうか
+    BOOL _isPressStamp;
     
 }
 
 -(IBAction)test;
 
-
-
-
-// ライブラリから選んだ画像の変数を参照したい
-//@property(nonatomic, assign) UIImage* SelectImage;
-//@property(nonatomic, weak) UIImageView *imageView;
-
 @property (nonatomic) UIImage *arguments;
 @property (nonatomic) UIImage *editPreviewImage;
+
+// スタンプ用画像
+@property (nonatomic, retain) UIImageView *stampUIImageView;
 
 // 画面に表示するためのもの
  @property (weak, nonatomic) IBOutlet UIImageView *argumentsLabelImage;

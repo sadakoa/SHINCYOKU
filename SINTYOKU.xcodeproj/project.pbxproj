@@ -178,12 +178,12 @@
 				A29768951965003C0000B976 /* ViewController.m */,
 				A29768B41965034F0000B976 /* EditImageViewController.h */,
 				A29768B51965034F0000B976 /* EditImageViewController.m */,
-				A29768971965003C0000B976 /* Images.xcassets */,
-				A29768861965003C0000B976 /* Supporting Files */,
 				A29768DC19666F960000B976 /* ImagePreviewViewController.h */,
 				A29768DD19666F960000B976 /* ImagePreviewViewController.m */,
 				A29768DF19671CE60000B976 /* SNSViewController.h */,
 				A29768E019671CE60000B976 /* SNSViewController.m */,
+				A29768971965003C0000B976 /* Images.xcassets */,
+				A29768861965003C0000B976 /* Supporting Files */,
 			);
 			path = SINTYOKU;
 			sourceTree = "<group>";
