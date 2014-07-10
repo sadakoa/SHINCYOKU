@@ -44,8 +44,6 @@
 {
     [super viewDidLoad];
     
-    UIImageView *stampUIImageView = [[[UIImageView alloc] init] autorelease];
-    
     self.navigationItem.title = @"編集";
     [UIColor whiteColor];
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:236/255.0 green:112/255.0 blue:97/255.0 alpha:1];
@@ -61,10 +59,10 @@
     NSLog(@"imageViewにライブラリから選んだ画像をセット");
     
     // スタンプ画像は最初はセットしない
-//   currentStampView = nil;
+    currentStampView = nil;
     
     // 最初はスタンプモードではない
-  //  _isPressStamp = NO;
+    _isPressStamp = NO;
         
 }
 
@@ -84,56 +82,56 @@
 
 // ==================================================================================
 
-//// ユーザによりViewへのタッチが開始したときに呼び出されるメソッド
-//- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-//    
-//    // タッチされた座標を取得
-//    UITouch* touch = [touches anyObject];
-//    CGPoint point = [touch locationInView:imageView];
-//    
-//    // スタンプ画像を取得、貼り付ける
-//    currentStampView = [[UIImageView alloc]
-//                        initWithFrame:CGRectMake(point.x-5, point.y-5, 280, 130)];
-//    currentStampView.image = [UIImage imageNamed:@"test01.png"];
-//    [self.view addSubview:currentStampView];
-//    
-//    // スタンプモード起動
-//     _isPressStamp = YES;
-//}
-//
-//// ==================================================================================
-//
-//// ユーザがドラッグしたときに呼び出されるメソッド
-//- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
-//    
-//    // タッチされた座標を取得
-//    UITouch* touch = [touches anyObject];
-//    CGPoint point = [touch locationInView:imageView];
-//    
-//    // スタンプの位置を変更する
-//    if (_isPressStamp) {
-//        currentStampView.frame = CGRectMake(point.x-5, point.y-5, 280, 130);
-//    }
-//}
-//
-//// ==================================================================================
-//
-//// ユーザがタッチを終了したときに呼び出されるメソッド
-//- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-//    
-//    // スタンプモード終了（スタンプを確定する）
-//    _isPressStamp = NO;
-//}
-//
-//// ==================================================================================
-//
-//// ユーザーが他のアクションで完全に終了した時に呼び出されるメソッド
-//- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
-//    
-//    // スタンプモード終了（スタンプを確定する）
-//    _isPressStamp = NO;
-//    
-//}
+// ユーザによりViewへのタッチが開始したときに呼び出されるメソッド
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    // タッチされた座標を取得
+    UITouch* touch = [touches anyObject];
+    CGPoint point = [touch locationInView:imageView];
+    
+    // スタンプ画像を取得、貼り付ける
+    currentStampView = [[UIImageView alloc]
+                        initWithFrame:CGRectMake(point.x-5, point.y-5, 280, 130)];
+    currentStampView.image = [UIImage imageNamed:@"test01.png"];
+    [self.view addSubview:currentStampView];
+    
+    // スタンプモード起動
+     _isPressStamp = YES;
+}
+
+// ==================================================================================
+
+// ユーザがドラッグしたときに呼び出されるメソッド
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    // タッチされた座標を取得
+    UITouch* touch = [touches anyObject];
+    CGPoint point = [touch locationInView:imageView];
+    
+    // スタンプの位置を変更する
+    if (_isPressStamp) {
+        currentStampView.frame = CGRectMake(point.x-5, point.y-5, 280, 130);
+    }
+}
+
+// ==================================================================================
+
+// ユーザがタッチを終了したときに呼び出されるメソッド
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    // スタンプモード終了（スタンプを確定する）
+    _isPressStamp = NO;
+}
+
+// ==================================================================================
+
+// ユーザーが他のアクションで完全に終了した時に呼び出されるメソッド
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    // スタンプモード終了（スタンプを確定する）
+    _isPressStamp = NO;
+    
+}
 
 // ==================================================================================
 

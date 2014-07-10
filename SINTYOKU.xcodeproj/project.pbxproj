@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A225B066196C0D1A00683B6C /* LGTM.png in Resources */ = {isa = PBXBuildFile; fileRef = A225B065196C0D1A00683B6C /* LGTM.png */; };
-		A225B069196E2E4300683B6C /* StampMoveClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A225B068196E2E4300683B6C /* StampMoveClass.m */; };
 		A29768801965003C0000B976 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A297687F1965003C0000B976 /* Foundation.framework */; };
 		A29768821965003C0000B976 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29768811965003C0000B976 /* CoreGraphics.framework */; };
 		A29768841965003C0000B976 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29768831965003C0000B976 /* UIKit.framework */; };
@@ -61,8 +60,6 @@
 
 /* Begin PBXFileReference section */
 		A225B065196C0D1A00683B6C /* LGTM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LGTM.png; sourceTree = "<group>"; };
-		A225B067196E2E4300683B6C /* StampMoveClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StampMoveClass.h; sourceTree = "<group>"; };
-		A225B068196E2E4300683B6C /* StampMoveClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StampMoveClass.m; sourceTree = "<group>"; };
 		A297687C1965003C0000B976 /* SINTYOKU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SINTYOKU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A297687F1965003C0000B976 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A29768811965003C0000B976 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -185,8 +182,6 @@
 				A29768DD19666F960000B976 /* ImagePreviewViewController.m */,
 				A29768DF19671CE60000B976 /* SNSViewController.h */,
 				A29768E019671CE60000B976 /* SNSViewController.m */,
-				A225B067196E2E4300683B6C /* StampMoveClass.h */,
-				A225B068196E2E4300683B6C /* StampMoveClass.m */,
 				A29768971965003C0000B976 /* Images.xcassets */,
 				A29768861965003C0000B976 /* Supporting Files */,
 			);
@@ -387,7 +382,6 @@
 				A29768E119671CE60000B976 /* SNSViewController.m in Sources */,
 				A29768961965003C0000B976 /* ViewController.m in Sources */,
 				A29768901965003C0000B976 /* AppDelegate.m in Sources */,
-				A225B069196E2E4300683B6C /* StampMoveClass.m in Sources */,
 				A29768DE19666F960000B976 /* ImagePreviewViewController.m in Sources */,
 				A297688C1965003C0000B976 /* main.m in Sources */,
 			);
