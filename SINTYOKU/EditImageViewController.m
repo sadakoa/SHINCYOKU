@@ -220,6 +220,10 @@
 
 // ==================================================================================
 
+-(IBAction)deleteStampImageButton {
+    [currentStampView removeFromSuperview];
+}
+
 
 
 

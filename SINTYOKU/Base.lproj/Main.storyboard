@@ -79,6 +79,9 @@
                                 <state key="normal" title="Button" image="tab01.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="deleteStampImageButton" destination="Ew0-2w-gZD" eventType="touchUpInside" id="RYe-BQ-QiW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSR-Qw-Eye">
                                 <rect key="frame" x="245" y="75" width="60" height="37"/>

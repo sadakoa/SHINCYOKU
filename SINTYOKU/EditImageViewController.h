@@ -26,6 +26,18 @@
 
 -(IBAction)test;
 
+// スタンプ削除ボタン
+-(IBAction)deleteStampImageButton;
+
+// スタンプ選択ボタン
+// -(IBAction)selectStampImageButton;
+
+// 戻るボタン
+// -(IBAction)editBackButton;
+
+// 進むボタン
+// -(IBAction)editFrontButton;
+
 @property (nonatomic) UIImage *arguments;
 @property (nonatomic) UIImage *editPreviewImage;
 
