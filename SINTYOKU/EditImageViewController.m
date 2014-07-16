@@ -23,6 +23,8 @@
 // イニシャライズ
 @synthesize stampUIImageView = _stampUIImageView;
 
+@synthesize pasedImage = _pasedImage;
+
 
 // ==================================================================================
 
@@ -61,8 +63,9 @@
     // 最初はスタンプモードではない
     _isPressStamp = NO;
     
-    // ピンチジェスチャーを登録する
-        
+    _pasedImage = [UIImage imageNamed:@"test01.png"];
+    currentStampView = (UIImageView *)[self.view viewWithTag:1];
+    
 }
 
 // ==================================================================================
@@ -91,7 +94,7 @@
     // スタンプ画像を取得、貼り付ける
     currentStampView = [[UIImageView alloc]
                         initWithFrame:CGRectMake(point.x-5, point.y-5, 280, 130)];
-    currentStampView.image = [UIImage imageNamed:@"test01.png"];
+    currentStampView.image = _pasedImage;
     [self.view addSubview:currentStampView];
     
     // スタンプモード起動
@@ -128,7 +131,7 @@
 // ユーザーが他のアクションで完全に終了した時に呼び出されるメソッド
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
     
-    // スタンプモード終了（スタンプを確定する）
+        // スタンプモード終了（スタンプを確定する）
     _isPressStamp = NO;
     
 }
@@ -221,12 +224,18 @@
 // ==================================================================================
 
 -(IBAction)deleteStampImageButton {
-    [currentStampView removeFromSuperview];
+        [currentStampView removeFromSuperview];
 }
 
+-(IBAction)doudesukaButton {
+    _pasedImage = [UIImage imageNamed:@"test01.png"];
 
+}
 
+-(IBAction)damedesuButton {
+    _pasedImage = [UIImage imageNamed:@"test03.png"];
 
+}
 
 /*
 #pragma mark - Navigation

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A225B066196C0D1A00683B6C /* LGTM.png in Resources */ = {isa = PBXBuildFile; fileRef = A225B065196C0D1A00683B6C /* LGTM.png */; };
+		A23381C91976BF9B0068AEC4 /* test03.png in Resources */ = {isa = PBXBuildFile; fileRef = A23381C81976BF9B0068AEC4 /* test03.png */; };
 		A29768801965003C0000B976 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A297687F1965003C0000B976 /* Foundation.framework */; };
 		A29768821965003C0000B976 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29768811965003C0000B976 /* CoreGraphics.framework */; };
 		A29768841965003C0000B976 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29768831965003C0000B976 /* UIKit.framework */; };
@@ -60,6 +61,7 @@
 
 /* Begin PBXFileReference section */
 		A225B065196C0D1A00683B6C /* LGTM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LGTM.png; sourceTree = "<group>"; };
+		A23381C81976BF9B0068AEC4 /* test03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test03.png; sourceTree = "<group>"; };
 		A297687C1965003C0000B976 /* SINTYOKU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SINTYOKU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A297687F1965003C0000B976 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A29768811965003C0000B976 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -229,6 +231,7 @@
 		A29768E81967C83D0000B976 /* StampImage */ = {
 			isa = PBXGroup;
 			children = (
+				A23381C81976BF9B0068AEC4 /* test03.png */,
 				A225B065196C0D1A00683B6C /* LGTM.png */,
 				A29768D119664EB10000B976 /* test02.png */,
 				A29768CF1965AEA20000B976 /* test01.png */,
@@ -344,6 +347,7 @@
 				A29768D219664EB10000B976 /* test02.png in Resources */,
 				A2976916196800980000B976 /* state02@2x.png in Resources */,
 				A2976917196800980000B976 /* tab01@2x.png in Resources */,
+				A23381C91976BF9B0068AEC4 /* test03.png in Resources */,
 				A29769021967FF8F0000B976 /* test@2x.png in Resources */,
 				A29768931965003C0000B976 /* Main.storyboard in Resources */,
 				A29768CB1965A0A90000B976 /* yes01.png in Resources */,

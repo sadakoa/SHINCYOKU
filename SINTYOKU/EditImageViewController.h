@@ -19,13 +19,16 @@
     // 貼り付け中のスタンプ画像
     UIImageView *currentStampView;
     
+    UIImageView *fackImage;
+    
     // スタンプ貼り付け中かどうか
     BOOL _isPressStamp;
     
 }
 
 -(IBAction)test;
-
+-(IBAction)doudesukaButton;
+-(IBAction)damedesuButton;
 
 // スタンプ削除ボタン
 -(IBAction)deleteStampImageButton;
@@ -41,7 +44,7 @@
 
 @property (nonatomic) UIImage *arguments;
 @property (nonatomic) UIImage *editPreviewImage;
-
+@property (nonatomic) UIImage *pasedImage;
 // スタンプ用画像
 @property (nonatomic, retain) UIImageView *stampUIImageView;
 
