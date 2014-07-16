@@ -7,7 +7,6 @@
 //
 
 #import "EditImageViewController.h"
-#import "WSCoachMarksView.h"
 
 // 遷移先
 #import "ImagePreviewViewController.h"
