@@ -67,9 +67,9 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gf9-zP-A6W">
-                                <rect key="frame" x="80" y="483" width="160" height="65"/>
+                                <rect key="frame" x="50" y="477" width="220" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="tab01.png">
+                                <state key="normal" title="Button" image="button03+.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -77,9 +77,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSR-Qw-Eye">
-                                <rect key="frame" x="180" y="431" width="60" height="37"/>
+                                <rect key="frame" x="170" y="401" width="100" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="state02.png">
+                                <state key="normal" title="Button" image="button02+.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -87,9 +87,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0L-JR-SSj">
-                                <rect key="frame" x="80" y="431" width="60" height="37"/>
+                                <rect key="frame" x="50" y="401" width="100" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="state01.png">
+                                <state key="normal" title="Button" image="button01+.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -246,15 +246,15 @@
     </scenes>
     <resources>
         <image name="Bg.png" width="290" height="182"/>
+        <image name="button01+.png" width="100" height="61"/>
+        <image name="button02+.png" width="100" height="61"/>
+        <image name="button03+.png" width="220" height="61"/>
         <image name="home01.png" width="110" height="114"/>
         <image name="home02.png" width="110" height="114"/>
         <image name="sns01.png" width="243" height="61"/>
         <image name="sns02.png" width="243" height="61"/>
         <image name="sns03.png" width="243" height="61"/>
         <image name="sns04.png" width="99" height="48"/>
-        <image name="state01.png" width="80" height="48"/>
-        <image name="state02.png" width="80" height="48"/>
-        <image name="tab01.png" width="160" height="65"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
