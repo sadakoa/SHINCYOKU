@@ -15,6 +15,7 @@
 		A23381D31976E0410068AEC4 /* newtest01.png in Resources */ = {isa = PBXBuildFile; fileRef = A23381D21976E0410068AEC4 /* newtest01.png */; };
 		A23381D61976E14E0068AEC4 /* test01.png in Resources */ = {isa = PBXBuildFile; fileRef = A23381D41976E14E0068AEC4 /* test01.png */; };
 		A23381D71976E14E0068AEC4 /* test03.png in Resources */ = {isa = PBXBuildFile; fileRef = A23381D51976E14E0068AEC4 /* test03.png */; };
+		A23381DD1976E7230068AEC4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A23381DC1976E7230068AEC4 /* Podfile */; };
 		A29768801965003C0000B976 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A297687F1965003C0000B976 /* Foundation.framework */; };
 		A29768821965003C0000B976 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29768811965003C0000B976 /* CoreGraphics.framework */; };
 		A29768841965003C0000B976 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29768831965003C0000B976 /* UIKit.framework */; };
@@ -72,6 +73,7 @@
 		A23381D21976E0410068AEC4 /* newtest01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newtest01.png; sourceTree = "<group>"; };
 		A23381D41976E14E0068AEC4 /* test01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test01.png; sourceTree = "<group>"; };
 		A23381D51976E14E0068AEC4 /* test03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test03.png; sourceTree = "<group>"; };
+		A23381DC1976E7230068AEC4 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		A297687C1965003C0000B976 /* SINTYOKU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SINTYOKU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A297687F1965003C0000B976 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A29768811965003C0000B976 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -147,6 +149,7 @@
 		A29768731965003C0000B976 = {
 			isa = PBXGroup;
 			children = (
+				A23381DC1976E7230068AEC4 /* Podfile */,
 				A29768851965003C0000B976 /* SINTYOKU */,
 				A29768A41965003C0000B976 /* SINTYOKUTests */,
 				A297687E1965003C0000B976 /* Frameworks */,
@@ -375,6 +378,7 @@
 				A225B066196C0D1A00683B6C /* LGTM.png in Resources */,
 				A2976915196800980000B976 /* state01@2x.png in Resources */,
 				A29768CA1965A0A90000B976 /* progress01.png in Resources */,
+				A23381DD1976E7230068AEC4 /* Podfile in Resources */,
 				A23381D71976E14E0068AEC4 /* test03.png in Resources */,
 				A2976910196800980000B976 /* home02@2x.png in Resources */,
 				A2976914196800980000B976 /* sns04@2x.png in Resources */,
