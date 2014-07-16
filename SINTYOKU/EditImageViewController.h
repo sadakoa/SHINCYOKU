@@ -26,11 +26,12 @@
 
 -(IBAction)test;
 
+
 // スタンプ削除ボタン
 -(IBAction)deleteStampImageButton;
 
 // スタンプ選択ボタン
-// -(IBAction)selectStampImageButton;
+ //-(IBAction)selectStampImageButton;
 
 // 戻るボタン
 // -(IBAction)editBackButton;

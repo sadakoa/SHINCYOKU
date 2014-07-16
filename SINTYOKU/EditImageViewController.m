@@ -30,10 +30,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
-        
-        
-
+        // Custom
     }
     return self;
 }
@@ -49,7 +46,7 @@
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:236/255.0 green:112/255.0 blue:97/255.0 alpha:1];
     [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
 
-    //　labelの色
+    // labelの色
 
     //[UINavigationBar appearance].barTintColor = [UIColor colorWithRed:0.000 green:0.549 blue:0.890 alpha:1.000];
 
@@ -63,6 +60,8 @@
     
     // 最初はスタンプモードではない
     _isPressStamp = NO;
+    
+    // ピンチジェスチャーを登録する
         
 }
 
@@ -118,6 +117,7 @@
 
 // ユーザがタッチを終了したときに呼び出されるメソッド
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    
     
     // スタンプモード終了（スタンプを確定する）
     _isPressStamp = NO;
