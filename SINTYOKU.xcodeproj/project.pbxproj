@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BBD6774802E4FA69AE302AB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 947707A40A8B49FDA8F04643 /* libPods.a */; };
 		A225B066196C0D1A00683B6C /* LGTM.png in Resources */ = {isa = PBXBuildFile; fileRef = A225B065196C0D1A00683B6C /* LGTM.png */; };
 		A23381CB1976D9AE0068AEC4 /* SINTYOKU@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23381CA1976D9AE0068AEC4 /* SINTYOKU@2x.png */; };
 		A23381CF1976DD370068AEC4 /* button01+@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23381CC1976DD370068AEC4 /* button01+@2x.png */; };
@@ -15,6 +16,7 @@
 		A23381D31976E0410068AEC4 /* newtest01.png in Resources */ = {isa = PBXBuildFile; fileRef = A23381D21976E0410068AEC4 /* newtest01.png */; };
 		A23381D61976E14E0068AEC4 /* test01.png in Resources */ = {isa = PBXBuildFile; fileRef = A23381D41976E14E0068AEC4 /* test01.png */; };
 		A23381D71976E14E0068AEC4 /* test03.png in Resources */ = {isa = PBXBuildFile; fileRef = A23381D51976E14E0068AEC4 /* test03.png */; };
+		A23381DB1976E5BE0068AEC4 /* WSCoachMarksView.m in Sources */ = {isa = PBXBuildFile; fileRef = A23381DA1976E5BE0068AEC4 /* WSCoachMarksView.m */; };
 		A29768801965003C0000B976 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A297687F1965003C0000B976 /* Foundation.framework */; };
 		A29768821965003C0000B976 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29768811965003C0000B976 /* CoreGraphics.framework */; };
 		A29768841965003C0000B976 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29768831965003C0000B976 /* UIKit.framework */; };
@@ -64,6 +66,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C60ABBC427B472E87054725 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		947707A40A8B49FDA8F04643 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A225B065196C0D1A00683B6C /* LGTM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LGTM.png; sourceTree = "<group>"; };
 		A23381CA1976D9AE0068AEC4 /* SINTYOKU@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SINTYOKU@2x.png"; sourceTree = "<group>"; };
 		A23381CC1976DD370068AEC4 /* button01+@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button01+@2x.png"; sourceTree = "<group>"; };
@@ -72,6 +76,9 @@
 		A23381D21976E0410068AEC4 /* newtest01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newtest01.png; sourceTree = "<group>"; };
 		A23381D41976E14E0068AEC4 /* test01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test01.png; sourceTree = "<group>"; };
 		A23381D51976E14E0068AEC4 /* test03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test03.png; sourceTree = "<group>"; };
+		A23381D81976E4D70068AEC4 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		A23381D91976E5BE0068AEC4 /* WSCoachMarksView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSCoachMarksView.h; sourceTree = "<group>"; };
+		A23381DA1976E5BE0068AEC4 /* WSCoachMarksView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSCoachMarksView.m; sourceTree = "<group>"; };
 		A297687C1965003C0000B976 /* SINTYOKU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SINTYOKU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A297687F1965003C0000B976 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A29768811965003C0000B976 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -128,6 +135,7 @@
 				A29768821965003C0000B976 /* CoreGraphics.framework in Frameworks */,
 				A29768841965003C0000B976 /* UIKit.framework in Frameworks */,
 				A29768801965003C0000B976 /* Foundation.framework in Frameworks */,
+				9BBD6774802E4FA69AE302AB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,10 +155,12 @@
 		A29768731965003C0000B976 = {
 			isa = PBXGroup;
 			children = (
+				A23381D81976E4D70068AEC4 /* Podfile */,
 				A29768851965003C0000B976 /* SINTYOKU */,
 				A29768A41965003C0000B976 /* SINTYOKUTests */,
 				A297687E1965003C0000B976 /* Frameworks */,
 				A297687D1965003C0000B976 /* Products */,
+				4C60ABBC427B472E87054725 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,6 +181,7 @@
 				A29768811965003C0000B976 /* CoreGraphics.framework */,
 				A29768831965003C0000B976 /* UIKit.framework */,
 				A297689E1965003C0000B976 /* XCTest.framework */,
+				947707A40A8B49FDA8F04643 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -192,6 +203,8 @@
 				A29768DD19666F960000B976 /* ImagePreviewViewController.m */,
 				A29768DF19671CE60000B976 /* SNSViewController.h */,
 				A29768E019671CE60000B976 /* SNSViewController.m */,
+				A23381D91976E5BE0068AEC4 /* WSCoachMarksView.h */,
+				A23381DA1976E5BE0068AEC4 /* WSCoachMarksView.m */,
 				A29768971965003C0000B976 /* Images.xcassets */,
 				A29768861965003C0000B976 /* Supporting Files */,
 			);
@@ -282,9 +295,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A29768AE1965003C0000B976 /* Build configuration list for PBXNativeTarget "SINTYOKU" */;
 			buildPhases = (
+				A91F50EAC9B54E48ABB184B0 /* Check Pods Manifest.lock */,
 				A29768781965003C0000B976 /* Sources */,
 				A29768791965003C0000B976 /* Frameworks */,
 				A297687A1965003C0000B976 /* Resources */,
+				2B411558905E48339117093B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -392,6 +407,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B411558905E48339117093B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A91F50EAC9B54E48ABB184B0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A29768781965003C0000B976 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -403,6 +451,7 @@
 				A29768961965003C0000B976 /* ViewController.m in Sources */,
 				A29768901965003C0000B976 /* AppDelegate.m in Sources */,
 				A29768DE19666F960000B976 /* ImagePreviewViewController.m in Sources */,
+				A23381DB1976E5BE0068AEC4 /* WSCoachMarksView.m in Sources */,
 				A297688C1965003C0000B976 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,6 +574,7 @@
 		};
 		A29768AF1965003C0000B976 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C60ABBC427B472E87054725 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -538,6 +588,7 @@
 		};
 		A29768B01965003C0000B976 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C60ABBC427B472E87054725 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
