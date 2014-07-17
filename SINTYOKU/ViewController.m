@@ -10,6 +10,7 @@
 
 //遷移先ビューのクラスをインポート
 #import "EditImageViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 
 @interface ViewController ()
