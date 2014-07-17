@@ -46,6 +46,40 @@
 {
     [super viewDidLoad];
     
+   // ===================================================================
+    
+//    NSArray *coachMarks = @[
+//                            @{
+//                                @"rect": [NSValue valueWithCGRect:(CGRect){{0,0},{45,45}}],
+//                                @"caption": @"Helpful navigation menu"
+//                                },
+//                            @{
+//                                @"rect": [NSValue valueWithCGRect:(CGRect){{10.0f,56.0f},{300.0f,56.0f}}],
+//                                @"caption": @"Document your wedding by taking photos"
+//                                },
+//                            @{
+//                                @"rect": [NSValue valueWithCGRect:(CGRect){{10.0f,119.0f},{300.0f,56.0f}}],
+//                                @"caption": @"Your wedding photo album"
+//                                },
+//                            @{
+//                                @"rect": [NSValue valueWithCGRect:(CGRect){{10.0f,182.0f},{300.0f,56.0f}}],
+//                                @"caption": @"View and manage your friends & family"
+//                                },
+//                            @{
+//                                @"rect": [NSValue valueWithCGRect:(CGRect){{10.0f,245.0f},{300.0f,56.0f}}],
+//                                @"caption": @"Invite friends to get more photos"
+//                                },
+//                            @{
+//                                @"rect": [NSValue valueWithCGRect:(CGRect){{0.0f,410.0f},{320.0f,50.0f}}],
+//                                @"caption": @"Keep your guests informed with your wedding details"
+//                                }
+//                            ];
+//    WSCoachMarksView *coachMarksView = [[WSCoachMarksView alloc] initWithFrame:self.view.bounds coachMarks:coachMarks];
+//    [self.view addSubview:coachMarksView];
+//    [coachMarksView start];
+    
+    // ===================================================================
+    
     self.navigationItem.title = @"編集";
     [UIColor whiteColor];
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:236/255.0 green:112/255.0 blue:97/255.0 alpha:1];
