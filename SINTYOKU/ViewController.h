@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WSCoachMarksView.h"
 
 @interface ViewController : UIViewController
 <UIImagePickerControllerDelegate, UINavigationControllerDelegate>

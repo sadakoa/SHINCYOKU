@@ -16,7 +16,8 @@
 		A23381D61976E14E0068AEC4 /* test01.png in Resources */ = {isa = PBXBuildFile; fileRef = A23381D41976E14E0068AEC4 /* test01.png */; };
 		A23381D71976E14E0068AEC4 /* test03.png in Resources */ = {isa = PBXBuildFile; fileRef = A23381D51976E14E0068AEC4 /* test03.png */; };
 		A23381DD1976E7230068AEC4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A23381DC1976E7230068AEC4 /* Podfile */; };
-		A23381E419776B240068AEC4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23381E319776B240068AEC4 /* QuartzCore.framework */; };
+		A23381EA19776C970068AEC4 /* WSCoachMarksView.m in Sources */ = {isa = PBXBuildFile; fileRef = A23381E919776C970068AEC4 /* WSCoachMarksView.m */; };
+		A23381EB19776CD20068AEC4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23381E319776B240068AEC4 /* QuartzCore.framework */; };
 		A29768801965003C0000B976 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A297687F1965003C0000B976 /* Foundation.framework */; };
 		A29768821965003C0000B976 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29768811965003C0000B976 /* CoreGraphics.framework */; };
 		A29768841965003C0000B976 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29768831965003C0000B976 /* UIKit.framework */; };
@@ -78,6 +79,8 @@
 		A23381D51976E14E0068AEC4 /* test03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test03.png; sourceTree = "<group>"; };
 		A23381DC1976E7230068AEC4 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		A23381E319776B240068AEC4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A23381E819776C970068AEC4 /* WSCoachMarksView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSCoachMarksView.h; sourceTree = "<group>"; };
+		A23381E919776C970068AEC4 /* WSCoachMarksView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSCoachMarksView.m; sourceTree = "<group>"; };
 		A297687C1965003C0000B976 /* SINTYOKU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SINTYOKU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A297687F1965003C0000B976 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A29768811965003C0000B976 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -131,7 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A23381E419776B240068AEC4 /* QuartzCore.framework in Frameworks */,
+				A23381EB19776CD20068AEC4 /* QuartzCore.framework in Frameworks */,
 				A29768E3196724260000B976 /* Social.framework in Frameworks */,
 				A29768821965003C0000B976 /* CoreGraphics.framework in Frameworks */,
 				A29768841965003C0000B976 /* UIKit.framework in Frameworks */,
@@ -191,6 +194,8 @@
 		A29768851965003C0000B976 /* SINTYOKU */ = {
 			isa = PBXGroup;
 			children = (
+				A23381E819776C970068AEC4 /* WSCoachMarksView.h */,
+				A23381E919776C970068AEC4 /* WSCoachMarksView.m */,
 				A29768EA1967C9240000B976 /* appDesignImage */,
 				A29768E419679DD70000B976 /* Classes */,
 				A29768E81967C83D0000B976 /* StampImage */,
@@ -452,6 +457,7 @@
 				A29768961965003C0000B976 /* ViewController.m in Sources */,
 				A29768901965003C0000B976 /* AppDelegate.m in Sources */,
 				A29768DE19666F960000B976 /* ImagePreviewViewController.m in Sources */,
+				A23381EA19776C970068AEC4 /* WSCoachMarksView.m in Sources */,
 				A297688C1965003C0000B976 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
