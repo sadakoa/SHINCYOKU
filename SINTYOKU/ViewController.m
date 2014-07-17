@@ -32,17 +32,32 @@
     rootView = self.navigationController.view;
     
     EAIntroPage *page1 = [EAIntroPage page];
-    page1.title = @"Hello world";
-    page1.desc = @"sampleDescription1";
+    page1.title = @"アプリ紹介";
+    page1.desc = @"シンチョク！とは「進捗どうですか」、\n「進捗ダメです」のコラージュ画像を\n簡単に作ることができるアプリです。";
     page1.bgImage = [UIImage imageNamed:@"bg1"];
     page1.titleIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title1"]];
     
     
     EAIntroPage *page2 = [EAIntroPage page];
-    page2.title = @"Second world";
-    page2.desc = @"sampleDescription2";
+    page2.title = @"2パターンの方法";
+    page2.desc = @"カメラで撮影した画像を使うか、\nライブラリの中にある画像を使うか、\n2種類の方法があります。";
+    page2.bgImage = [UIImage imageNamed:@"bg1"];
+    page2.titleIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title1"]];
     
-    EAIntroView *intro = [[EAIntroView alloc] initWithFrame:self.view.bounds andPages:@[page1,page2]];
+    EAIntroPage *page3 = [EAIntroPage page];
+    page3.title = @"使い方";
+    page3.desc = @"操作は簡単！編集画面で、\n選んだ画像にスタンプを貼るだけです！";
+    page3.bgImage = [UIImage imageNamed:@"bg1"];
+    page3.titleIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title1"]];
+
+    EAIntroPage *page4 = [EAIntroPage page];
+    page4.title = @"作った後は・・・";
+    page4.desc = @"作った画像はSNSでシェアしたり、\n友達に送りつけてみよう！";
+    page4.bgImage = [UIImage imageNamed:@"bg1"];
+    page4.titleIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title1"]];
+
+    
+    EAIntroView *intro = [[EAIntroView alloc] initWithFrame:self.view.bounds andPages:@[page1,page2,page3,page4]];
     [intro setDelegate:self];
     
     [intro showInView:self.view animateDuration:0.0];
