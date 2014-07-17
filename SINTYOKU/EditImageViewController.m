@@ -84,8 +84,7 @@
     // 最初はスタンプモードではない
     _isPressStamp = NO;
     
-//    _pasedImage = [UIImage imageNamed:@"test01.png"];
-    
+    _pasedImage = [UIImage imageNamed:@"test01.png"];
     currentStampView = (UIImageView *)[self.view viewWithTag:1];
     
 }
