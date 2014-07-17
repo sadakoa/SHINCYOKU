@@ -37,7 +37,7 @@
     page1.bgImage = [UIImage imageNamed:@"bg1"];
     page1.titleIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title1"]];
     
-    
+            
     EAIntroPage *page2 = [EAIntroPage page];
     page2.title = @"2パターンの方法";
     page2.desc = @"カメラで撮影した画像を使うか、\nライブラリの中にある画像を使うか、\n2種類の方法があります。";
@@ -60,7 +60,7 @@
     EAIntroView *intro = [[EAIntroView alloc] initWithFrame:self.view.bounds andPages:@[page1,page2,page3,page4]];
     [intro setDelegate:self];
     
-    [intro showInView:self.view animateDuration:0.0];
+     [intro showInView:rootView animateDuration:0.3];
     
 	// Do any additional setup after loading the view, typically from a nib.
     [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
