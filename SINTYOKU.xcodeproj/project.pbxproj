@@ -16,8 +16,6 @@
 		A23381D61976E14E0068AEC4 /* test01.png in Resources */ = {isa = PBXBuildFile; fileRef = A23381D41976E14E0068AEC4 /* test01.png */; };
 		A23381D71976E14E0068AEC4 /* test03.png in Resources */ = {isa = PBXBuildFile; fileRef = A23381D51976E14E0068AEC4 /* test03.png */; };
 		A23381DD1976E7230068AEC4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A23381DC1976E7230068AEC4 /* Podfile */; };
-		A23381EA19776C970068AEC4 /* WSCoachMarksView.m in Sources */ = {isa = PBXBuildFile; fileRef = A23381E919776C970068AEC4 /* WSCoachMarksView.m */; };
-		A23381EB19776CD20068AEC4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23381E319776B240068AEC4 /* QuartzCore.framework */; };
 		A29768801965003C0000B976 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A297687F1965003C0000B976 /* Foundation.framework */; };
 		A29768821965003C0000B976 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29768811965003C0000B976 /* CoreGraphics.framework */; };
 		A29768841965003C0000B976 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29768831965003C0000B976 /* UIKit.framework */; };
@@ -54,7 +52,6 @@
 		A2976916196800980000B976 /* state02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A297690B196800980000B976 /* state02@2x.png */; };
 		A2976917196800980000B976 /* tab01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A297690C196800980000B976 /* tab01@2x.png */; };
 		A2976918196800980000B976 /* tab02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A297690D196800980000B976 /* tab02@2x.png */; };
-		CCE06A80908A46C58D3C3284 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7446ED135D14F6792FB1A8F /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +65,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F283C6F628940DAA9285FEC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		A225B065196C0D1A00683B6C /* LGTM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LGTM.png; sourceTree = "<group>"; };
 		A23381CA1976D9AE0068AEC4 /* SINTYOKU@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SINTYOKU@2x.png"; sourceTree = "<group>"; };
 		A23381CC1976DD370068AEC4 /* button01+@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button01+@2x.png"; sourceTree = "<group>"; };
@@ -78,9 +74,6 @@
 		A23381D41976E14E0068AEC4 /* test01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test01.png; sourceTree = "<group>"; };
 		A23381D51976E14E0068AEC4 /* test03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test03.png; sourceTree = "<group>"; };
 		A23381DC1976E7230068AEC4 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		A23381E319776B240068AEC4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		A23381E819776C970068AEC4 /* WSCoachMarksView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSCoachMarksView.h; sourceTree = "<group>"; };
-		A23381E919776C970068AEC4 /* WSCoachMarksView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSCoachMarksView.m; sourceTree = "<group>"; };
 		A297687C1965003C0000B976 /* SINTYOKU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SINTYOKU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A297687F1965003C0000B976 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A29768811965003C0000B976 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -126,7 +119,6 @@
 		A297690B196800980000B976 /* state02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "state02@2x.png"; sourceTree = "<group>"; };
 		A297690C196800980000B976 /* tab01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab01@2x.png"; sourceTree = "<group>"; };
 		A297690D196800980000B976 /* tab02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab02@2x.png"; sourceTree = "<group>"; };
-		E7446ED135D14F6792FB1A8F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,12 +126,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A23381EB19776CD20068AEC4 /* QuartzCore.framework in Frameworks */,
 				A29768E3196724260000B976 /* Social.framework in Frameworks */,
 				A29768821965003C0000B976 /* CoreGraphics.framework in Frameworks */,
 				A29768841965003C0000B976 /* UIKit.framework in Frameworks */,
 				A29768801965003C0000B976 /* Foundation.framework in Frameworks */,
-				CCE06A80908A46C58D3C3284 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +154,6 @@
 				A29768A41965003C0000B976 /* SINTYOKUTests */,
 				A297687E1965003C0000B976 /* Frameworks */,
 				A297687D1965003C0000B976 /* Products */,
-				0F283C6F628940DAA9285FEC /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,13 +169,11 @@
 		A297687E1965003C0000B976 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A23381E319776B240068AEC4 /* QuartzCore.framework */,
 				A29768E2196724260000B976 /* Social.framework */,
 				A297687F1965003C0000B976 /* Foundation.framework */,
 				A29768811965003C0000B976 /* CoreGraphics.framework */,
 				A29768831965003C0000B976 /* UIKit.framework */,
 				A297689E1965003C0000B976 /* XCTest.framework */,
-				E7446ED135D14F6792FB1A8F /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -194,8 +181,6 @@
 		A29768851965003C0000B976 /* SINTYOKU */ = {
 			isa = PBXGroup;
 			children = (
-				A23381E819776C970068AEC4 /* WSCoachMarksView.h */,
-				A23381E919776C970068AEC4 /* WSCoachMarksView.m */,
 				A29768EA1967C9240000B976 /* appDesignImage */,
 				A29768E419679DD70000B976 /* Classes */,
 				A29768E81967C83D0000B976 /* StampImage */,
@@ -300,11 +285,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A29768AE1965003C0000B976 /* Build configuration list for PBXNativeTarget "SINTYOKU" */;
 			buildPhases = (
-				CB3A82F41F704C81AEBB1592 /* Check Pods Manifest.lock */,
 				A29768781965003C0000B976 /* Sources */,
 				A29768791965003C0000B976 /* Frameworks */,
 				A297687A1965003C0000B976 /* Resources */,
-				82F09AFA22C6485C976A5AFD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -413,39 +396,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		82F09AFA22C6485C976A5AFD /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CB3A82F41F704C81AEBB1592 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		A29768781965003C0000B976 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -457,7 +407,6 @@
 				A29768961965003C0000B976 /* ViewController.m in Sources */,
 				A29768901965003C0000B976 /* AppDelegate.m in Sources */,
 				A29768DE19666F960000B976 /* ImagePreviewViewController.m in Sources */,
-				A23381EA19776C970068AEC4 /* WSCoachMarksView.m in Sources */,
 				A297688C1965003C0000B976 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,7 +529,6 @@
 		};
 		A29768AF1965003C0000B976 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F283C6F628940DAA9285FEC /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -594,7 +542,6 @@
 		};
 		A29768B01965003C0000B976 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F283C6F628940DAA9285FEC /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
