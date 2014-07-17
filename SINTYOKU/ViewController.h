@@ -32,5 +32,7 @@
 // ブラウザを開く
 -(IBAction)openBrowserButton;
 
+@property(nonatomic,weak) IBOutlet EAIntroView *introView;
+
 
 @end
