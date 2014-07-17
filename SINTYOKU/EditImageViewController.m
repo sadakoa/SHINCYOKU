@@ -11,6 +11,9 @@
 // 遷移先
 #import "ImagePreviewViewController.h"
 
+//  コーチマーク
+#import "WSCoachMarksView.h"
+
 @interface EditImageViewController ()
 
 

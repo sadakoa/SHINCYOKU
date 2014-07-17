@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+// コーチマーク
+#import "WSCoachMarksView.h"
+
 @interface EditImageViewController : UIViewController\
 <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
