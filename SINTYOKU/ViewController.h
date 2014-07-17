@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+
+// ウォークスルーをインポート
 #import "EAIntroView.h"
 
 @interface ViewController : UIViewController
@@ -20,8 +22,6 @@
     UIImage *_beforeStampEditImage;
 }
 
-// 多分要らない
-// @property (nonatomic) UIImage *arguments;
 
 // カメラを開く
 -(IBAction)openCameraButton;
