@@ -35,6 +35,8 @@
     page1.title = @"アプリ紹介";
     page1.desc = @"シンチョク！とは「進捗どうですか」、\n「進捗ダメです」のコラージュ画像を\n簡単に作ることができるアプリです。";
     page1.bgImage = [UIImage imageNamed:@"bg1"];
+  //  page1.descFont = [UIFont fontWithName:@"Georgia-Italic" size:16];
+ //   page1.descColor = [UIColor blueColor];
     page1.titleIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title1"]];
     
             
@@ -60,7 +62,7 @@
     EAIntroView *intro = [[EAIntroView alloc] initWithFrame:self.view.bounds andPages:@[page1,page2,page3,page4]];
     [intro setDelegate:self];
     
-     [intro showInView:rootView animateDuration:0.3];
+    [intro showInView:rootView animateDuration:0.3];
     
 	// Do any additional setup after loading the view, typically from a nib.
     [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
