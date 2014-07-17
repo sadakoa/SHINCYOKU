@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "WSCoachMarksView.h"
+// Error回避
 
 @interface EditImageViewController : UIViewController\
 <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
