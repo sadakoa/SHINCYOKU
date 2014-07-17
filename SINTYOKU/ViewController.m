@@ -35,6 +35,7 @@
     page1.title = @"アプリ紹介";
     page1.desc = @"シンチョク！とは「進捗どうですか」、\n「進捗ダメです」のコラージュ画像を\n簡単に作ることができるアプリです。";
     page1.bgImage = [UIImage imageNamed:@"bg1"];
+   // page1.descColor =  [UIColor colorWithRed:236/255.0 green:112/255.0 blue:97/255.0 alpha:1];
     page1.titleIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title1"]];
     
             

@@ -17,8 +17,8 @@
 		A23381D71976E14E0068AEC4 /* test03.png in Resources */ = {isa = PBXBuildFile; fileRef = A23381D51976E14E0068AEC4 /* test03.png */; };
 		A23381DD1976E7230068AEC4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A23381DC1976E7230068AEC4 /* Podfile */; };
 		A23381ED197771FA0068AEC4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23381EC197771FA0068AEC4 /* QuartzCore.framework */; };
-		A233822D1977A4240068AEC4 /* bg1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A233822B1977A4240068AEC4 /* bg1@2x.png */; };
 		A233822E1977A4240068AEC4 /* title1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A233822C1977A4240068AEC4 /* title1@2x.png */; };
+		A23382341977DCDE0068AEC4 /* bg1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23382331977DCDE0068AEC4 /* bg1@2x.png */; };
 		A29768801965003C0000B976 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A297687F1965003C0000B976 /* Foundation.framework */; };
 		A29768821965003C0000B976 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29768811965003C0000B976 /* CoreGraphics.framework */; };
 		A29768841965003C0000B976 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29768831965003C0000B976 /* UIKit.framework */; };
@@ -81,8 +81,8 @@
 		A23381D51976E14E0068AEC4 /* test03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test03.png; sourceTree = "<group>"; };
 		A23381DC1976E7230068AEC4 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		A23381EC197771FA0068AEC4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		A233822B1977A4240068AEC4 /* bg1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg1@2x.png"; sourceTree = "<group>"; };
 		A233822C1977A4240068AEC4 /* title1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title1@2x.png"; sourceTree = "<group>"; };
+		A23382331977DCDE0068AEC4 /* bg1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg1@2x.png"; sourceTree = "<group>"; };
 		A297687C1965003C0000B976 /* SINTYOKU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SINTYOKU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A297687F1965003C0000B976 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A29768811965003C0000B976 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -195,7 +195,7 @@
 		A29768851965003C0000B976 /* SINTYOKU */ = {
 			isa = PBXGroup;
 			children = (
-				A233822B1977A4240068AEC4 /* bg1@2x.png */,
+				A23382331977DCDE0068AEC4 /* bg1@2x.png */,
 				A233822C1977A4240068AEC4 /* title1@2x.png */,
 				A29768EA1967C9240000B976 /* appDesignImage */,
 				A29768E419679DD70000B976 /* Classes */,
@@ -381,6 +381,7 @@
 				A233822E1977A4240068AEC4 /* title1@2x.png in Resources */,
 				A23381CF1976DD370068AEC4 /* button01+@2x.png in Resources */,
 				A23381D61976E14E0068AEC4 /* test01.png in Resources */,
+				A23382341977DCDE0068AEC4 /* bg1@2x.png in Resources */,
 				A29768D219664EB10000B976 /* test02.png in Resources */,
 				A2976916196800980000B976 /* state02@2x.png in Resources */,
 				A2976917196800980000B976 /* tab01@2x.png in Resources */,
@@ -392,7 +393,6 @@
 				A2976913196800980000B976 /* sns03@2x.png in Resources */,
 				A29768C019652E670000B976 /* image.png in Resources */,
 				A2976911196800980000B976 /* sns01@2x.png in Resources */,
-				A233822D1977A4240068AEC4 /* bg1@2x.png in Resources */,
 				A297690F196800980000B976 /* home01@2x.png in Resources */,
 				A297690E196800980000B976 /* Bg@2x.png in Resources */,
 				A225B066196C0D1A00683B6C /* LGTM.png in Resources */,
