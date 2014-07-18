@@ -12,12 +12,14 @@
 #import "EditImageViewController.h"
 
 // 多分必要な物
+#import "SMPageControl.h"
 #import <QuartzCore/QuartzCore.h>
 
 
 @interface ViewController () {
     UIView *rootView;
 }
+
 @end
 
 @implementation ViewController
@@ -36,26 +38,24 @@
         // ここに書いた内容は初回起動時のみ処理
     
         rootView = self.navigationController.view;
-        
-        EAIntroPage *page1 = [EAIntroPage page];
-        page1.bgImage = [UIImage imageNamed:@"WT01"];
+    EAIntroPage *page1 = [EAIntroPage page];
+    page1.bgImage = [UIImage imageNamed:@"WT01"];
+    
+    EAIntroPage *page2 = [EAIntroPage page];
+    page2.bgImage = [UIImage imageNamed:@"WT02"];
+    
+    EAIntroPage *page3 = [EAIntroPage page];
+    page3.bgImage = [UIImage imageNamed:@"WT03"];
+    
+    EAIntroPage *page4 = [EAIntroPage page];
+    page4.bgImage = [UIImage imageNamed:@"WT04"];
+    
+    EAIntroView *intro = [[EAIntroView alloc] initWithFrame:self.view.bounds andPages:@[page1,page2,page3,page4]];
+    [intro setDelegate:self];
+    [intro showInView:rootView animateDuration:0.0];
 
-        EAIntroPage *page2 = [EAIntroPage page];
-        page2.bgImage = [UIImage imageNamed:@"WT02"];
-    
-        EAIntroPage *page3 = [EAIntroPage page];
-        page3.bgImage = [UIImage imageNamed:@"WT03"];
-    
-        EAIntroPage *page4 = [EAIntroPage page];
-        page4.bgImage = [UIImage imageNamed:@"WT04"];
-    
-        EAIntroView *intro = [[EAIntroView alloc] initWithFrame:self.view.bounds andPages:@[page1,page2,page3,page4]];
-        [intro setDelegate:self];
-        [intro showInView:rootView animateDuration:0.0];
+        
 //    }
-    
-    
-    
 	// Do any additional setup after loading the view, typically from a nib.
     [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
     
