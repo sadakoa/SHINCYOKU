@@ -45,15 +45,15 @@
     
     NSArray *coachMarks = @[
                             @{
-                                @"rect": [NSValue valueWithCGRect:(CGRect){{40.0f,390.0f},{120.0f,80.0f}}],
+                                @"rect": [NSValue valueWithCGRect:(CGRect){{45.0f,400.0f},{110.0f,72.0f}}],
                                 @"caption": @"「進捗ダメです」のスタンプはこちらを押してから画面をタッチしてください。"
                                 },
                             @{
-                                @"rect": [NSValue valueWithCGRect:(CGRect){{160.0f,390.0f},{120.0f,80.0f}}],
+                                @"rect": [NSValue valueWithCGRect:(CGRect){{165.0f,400.0f},{110.0f,72.0f}}],
                                 @"caption": @"「進捗どうですか」のスタンプはこちらを押してから画面をタッチしてください。"
                                 },
                             @{
-                                @"rect": [NSValue valueWithCGRect:(CGRect){{40.0f,470.0f},{240.0f,75.0f}}],
+                                @"rect": [NSValue valueWithCGRect:(CGRect){{45.0f,475.0f},{230.0f,74.0f}}],
                                 @"caption": @"スタンプを削除したい時は、消去ボタンで消すことが出来ます。"
                                 },
 
