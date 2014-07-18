@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A225B066196C0D1A00683B6C /* LGTM.png in Resources */ = {isa = PBXBuildFile; fileRef = A225B065196C0D1A00683B6C /* LGTM.png */; };
-		A23381CB1976D9AE0068AEC4 /* SINTYOKU@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23381CA1976D9AE0068AEC4 /* SINTYOKU@2x.png */; };
 		A23381CF1976DD370068AEC4 /* button01+@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23381CC1976DD370068AEC4 /* button01+@2x.png */; };
 		A23381D01976DD370068AEC4 /* button02+@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23381CD1976DD370068AEC4 /* button02+@2x.png */; };
 		A23381D11976DD370068AEC4 /* button03+@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23381CE1976DD370068AEC4 /* button03+@2x.png */; };
@@ -19,6 +18,8 @@
 		A23381ED197771FA0068AEC4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23381EC197771FA0068AEC4 /* QuartzCore.framework */; };
 		A233822E1977A4240068AEC4 /* title1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A233822C1977A4240068AEC4 /* title1@2x.png */; };
 		A23382341977DCDE0068AEC4 /* bg1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23382331977DCDE0068AEC4 /* bg1@2x.png */; };
+		A23382361978D93E0068AEC4 /* WT01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23382351978D93E0068AEC4 /* WT01@2x.png */; };
+		A23382381978DCD40068AEC4 /* SINTYOKU@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23382371978DCD40068AEC4 /* SINTYOKU@2x.png */; };
 		A29768801965003C0000B976 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A297687F1965003C0000B976 /* Foundation.framework */; };
 		A29768821965003C0000B976 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29768811965003C0000B976 /* CoreGraphics.framework */; };
 		A29768841965003C0000B976 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29768831965003C0000B976 /* UIKit.framework */; };
@@ -72,7 +73,6 @@
 		0AFC8E3827DB4D00963D894B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		3609AB6C4513460CBC057A20 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A225B065196C0D1A00683B6C /* LGTM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LGTM.png; sourceTree = "<group>"; };
-		A23381CA1976D9AE0068AEC4 /* SINTYOKU@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SINTYOKU@2x.png"; sourceTree = "<group>"; };
 		A23381CC1976DD370068AEC4 /* button01+@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button01+@2x.png"; sourceTree = "<group>"; };
 		A23381CD1976DD370068AEC4 /* button02+@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button02+@2x.png"; sourceTree = "<group>"; };
 		A23381CE1976DD370068AEC4 /* button03+@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button03+@2x.png"; sourceTree = "<group>"; };
@@ -83,6 +83,8 @@
 		A23381EC197771FA0068AEC4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A233822C1977A4240068AEC4 /* title1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title1@2x.png"; sourceTree = "<group>"; };
 		A23382331977DCDE0068AEC4 /* bg1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg1@2x.png"; sourceTree = "<group>"; };
+		A23382351978D93E0068AEC4 /* WT01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WT01@2x.png"; sourceTree = "<group>"; };
+		A23382371978DCD40068AEC4 /* SINTYOKU@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SINTYOKU@2x.png"; sourceTree = "<group>"; };
 		A297687C1965003C0000B976 /* SINTYOKU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SINTYOKU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A297687F1965003C0000B976 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A29768811965003C0000B976 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -195,6 +197,7 @@
 		A29768851965003C0000B976 /* SINTYOKU */ = {
 			isa = PBXGroup;
 			children = (
+				A23382351978D93E0068AEC4 /* WT01@2x.png */,
 				A23382331977DCDE0068AEC4 /* bg1@2x.png */,
 				A233822C1977A4240068AEC4 /* title1@2x.png */,
 				A29768EA1967C9240000B976 /* appDesignImage */,
@@ -274,10 +277,10 @@
 		A29768EA1967C9240000B976 /* appDesignImage */ = {
 			isa = PBXGroup;
 			children = (
+				A23382371978DCD40068AEC4 /* SINTYOKU@2x.png */,
 				A23381CC1976DD370068AEC4 /* button01+@2x.png */,
 				A23381CD1976DD370068AEC4 /* button02+@2x.png */,
 				A23381CE1976DD370068AEC4 /* button03+@2x.png */,
-				A23381CA1976D9AE0068AEC4 /* SINTYOKU@2x.png */,
 				A2976903196800980000B976 /* Bg@2x.png */,
 				A2976904196800980000B976 /* home01@2x.png */,
 				A2976905196800980000B976 /* home02@2x.png */,
@@ -386,12 +389,13 @@
 				A2976916196800980000B976 /* state02@2x.png in Resources */,
 				A2976917196800980000B976 /* tab01@2x.png in Resources */,
 				A29769021967FF8F0000B976 /* test@2x.png in Resources */,
-				A23381CB1976D9AE0068AEC4 /* SINTYOKU@2x.png in Resources */,
 				A29768931965003C0000B976 /* Main.storyboard in Resources */,
 				A23381D11976DD370068AEC4 /* button03+@2x.png in Resources */,
 				A29768CB1965A0A90000B976 /* yes01.png in Resources */,
 				A2976913196800980000B976 /* sns03@2x.png in Resources */,
+				A23382381978DCD40068AEC4 /* SINTYOKU@2x.png in Resources */,
 				A29768C019652E670000B976 /* image.png in Resources */,
+				A23382361978D93E0068AEC4 /* WT01@2x.png in Resources */,
 				A2976911196800980000B976 /* sns01@2x.png in Resources */,
 				A297690F196800980000B976 /* home01@2x.png in Resources */,
 				A297690E196800980000B976 /* Bg@2x.png in Resources */,
