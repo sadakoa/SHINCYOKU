@@ -29,39 +29,32 @@
     
     [super viewDidLoad];
     
-    rootView = self.navigationController.view;
+//    BOOL EAIntroViewShown = [[NSUserDefaults standardUserDefaults] boolForKey:@"EAIntroViewShown"];
+//    if (EAIntroViewShown == NO) {
+//        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"EAIntroViewShown"];
+//        [[NSUserDefaults standardUserDefaults] synchronize];
+        // ここに書いた内容は初回起動時のみ処理
     
-    EAIntroPage *page1 = [EAIntroPage page];
-    // page1.title = @"アプリ紹介";
-   // page1.desc = @"シンチョク！とは「進捗どうですか」、\n「進捗ダメです」のコラージュ画像を\n簡単に作ることができるアプリです。";
-    page1.bgImage = [UIImage imageNamed:@"WT01"];
-   // page1.descColor =  [UIColor colorWithRed:236/255.0 green:112/255.0 blue:97/255.0 alpha:1];
-    //page1.titleIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title1"]];
-    
-            
-    EAIntroPage *page2 = [EAIntroPage page];
-    //page2.title = @"2パターンの方法";
-    //page2.desc = @"カメラで撮影した画像を使うか、\nライブラリの中にある画像を使うか、\n2種類の方法があります。";
-    page2.bgImage = [UIImage imageNamed:@"WT02"];
-    //page2.titleIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title1"]];
-    
-    EAIntroPage *page3 = [EAIntroPage page];
-    //page3.title = @"使い方";
-    //page3.desc = @"操作は簡単！\n編集画面で、選んだ画像に\nスタンプを貼るだけです！";
-    page3.bgImage = [UIImage imageNamed:@"WT03"];
-    //page3.titleIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title1"]];
+        rootView = self.navigationController.view;
+        
+        EAIntroPage *page1 = [EAIntroPage page];
+        page1.bgImage = [UIImage imageNamed:@"WT01"];
 
-    EAIntroPage *page4 = [EAIntroPage page];
-    //page4.title = @"作った後は・・・";
-    //page4.desc = @"作った画像は\nSNSでシェアしたり、\n友達に送ってみたりしよう！";
-    page4.bgImage = [UIImage imageNamed:@"WT04"];
-    //page4.titleIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title1"]];
-
+        EAIntroPage *page2 = [EAIntroPage page];
+        page2.bgImage = [UIImage imageNamed:@"WT02"];
     
-    EAIntroView *intro = [[EAIntroView alloc] initWithFrame:self.view.bounds andPages:@[page1,page2,page3,page4]];
-    [intro setDelegate:self];
+        EAIntroPage *page3 = [EAIntroPage page];
+        page3.bgImage = [UIImage imageNamed:@"WT03"];
     
-     [intro showInView:rootView animateDuration:0.3];
+        EAIntroPage *page4 = [EAIntroPage page];
+        page4.bgImage = [UIImage imageNamed:@"WT04"];
+    
+        EAIntroView *intro = [[EAIntroView alloc] initWithFrame:self.view.bounds andPages:@[page1,page2,page3,page4]];
+        [intro setDelegate:self];
+        [intro showInView:rootView animateDuration:0.0];
+//    }
+    
+    
     
 	// Do any additional setup after loading the view, typically from a nib.
     [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
@@ -200,5 +193,7 @@
 -(IBAction)testSegue {
     [self performSegueWithIdentifier:@"EditImageViewSegue" sender:self];
 }
+
+
 
 @end

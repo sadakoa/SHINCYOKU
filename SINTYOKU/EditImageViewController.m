@@ -43,25 +43,33 @@
 {
     [super viewDidLoad];
     
-    NSArray *coachMarks = @[
-                            @{
-                                @"rect": [NSValue valueWithCGRect:(CGRect){{45.0f,400.0f},{110.0f,72.0f}}],
-                                @"caption": @"「進捗ダメです」のスタンプはこちらを押してから画面をタッチしてください。"
-                                },
-                            @{
-                                @"rect": [NSValue valueWithCGRect:(CGRect){{165.0f,400.0f},{110.0f,72.0f}}],
-                                @"caption": @"「進捗どうですか」のスタンプはこちらを押してから画面をタッチしてください。"
-                                },
-                            @{
-                                @"rect": [NSValue valueWithCGRect:(CGRect){{45.0f,475.0f},{230.0f,74.0f}}],
-                                @"caption": @"スタンプを削除したい時は、消去ボタンで消すことが出来ます。"
-                                },
+//    BOOL coachMarksShown = [[NSUserDefaults standardUserDefaults] boolForKey:@"WSCoachMarksShown"];
+//    if (coachMarksShown == NO) {
+//        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"WSCoachMarksShown"];
+//        [[NSUserDefaults standardUserDefaults] synchronize];
+        // ここに書いた内容は初回起動時のみ処理
+        NSArray *coachMarks = @[
+                                @{
+                                    @"rect": [NSValue valueWithCGRect:(CGRect){{45.0f,400.0f},{110.0f,72.0f}}],
+                                    @"caption": @"「進捗ダメです」のスタンプはこちらを押してから画面をタッチしてください。"
+                                    },
+                                @{
+                                    @"rect": [NSValue valueWithCGRect:(CGRect){{165.0f,400.0f},{110.0f,72.0f}}],
+                                    @"caption": @"「進捗どうですか」のスタンプはこちらを押してから画面をタッチしてください。"
+                                    },
+                                @{
+                                    @"rect": [NSValue valueWithCGRect:(CGRect){{45.0f,475.0f},{230.0f,74.0f}}],
+                                    @"caption": @"スタンプを削除したい時は、消去ボタンで消すことが出来ます。"
+                                    },
+                                
+                                
+                                ];
+        WSCoachMarksView *coachMarksView = [[WSCoachMarksView alloc] initWithFrame:self.view.bounds coachMarks:coachMarks];
+        [self.view addSubview:coachMarksView];
+        [coachMarksView start];
 
-                            
-                            ];
-    WSCoachMarksView *coachMarksView = [[WSCoachMarksView alloc] initWithFrame:self.view.bounds coachMarks:coachMarks];
-    [self.view addSubview:coachMarksView];
-    [coachMarksView start];
+//    }
+    
     
     
     self.navigationItem.title = @"編集";
