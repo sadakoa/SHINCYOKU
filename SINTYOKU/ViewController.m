@@ -29,11 +29,11 @@
     
     [super viewDidLoad];
     
-//    BOOL EAIntroViewShown = [[NSUserDefaults standardUserDefaults] boolForKey:@"EAIntroViewShown"];
-//    if (EAIntroViewShown == NO) {
-//        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"EAIntroViewShown"];
-//        [[NSUserDefaults standardUserDefaults] synchronize];
-        // ここに書いた内容は初回起動時のみ処理
+    BOOL EAIntroViewShown = [[NSUserDefaults standardUserDefaults] boolForKey:@"EAIntroViewShown"];
+    if (EAIntroViewShown == NO) {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"EAIntroViewShown"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        //ここに書いた内容は初回起動時のみ処理
     
     EAIntroPage *page1 = [EAIntroPage page];
     page1.bgImage = [UIImage imageNamed:@"WT01"];
@@ -52,7 +52,8 @@
     [intro showInView:self.view animateDuration:0.0];
 
         
-//    }
+   }
+    
 	// Do any additional setup after loading the view, typically from a nib.
     [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
     

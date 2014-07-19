@@ -43,10 +43,10 @@
 {
     [super viewDidLoad];
     
-//    BOOL coachMarksShown = [[NSUserDefaults standardUserDefaults] boolForKey:@"WSCoachMarksShown"];
-//    if (coachMarksShown == NO) {
-//        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"WSCoachMarksShown"];
-//        [[NSUserDefaults standardUserDefaults] synchronize];
+    BOOL coachMarksShown = [[NSUserDefaults standardUserDefaults] boolForKey:@"WSCoachMarksShown"];
+   if (coachMarksShown == NO) {
+       [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"WSCoachMarksShown"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
         // ここに書いた内容は初回起動時のみ処理
         NSArray *coachMarks = @[
                                 @{
@@ -68,7 +68,7 @@
         [self.view addSubview:coachMarksView];
         [coachMarksView start];
 
-//    }
+   }
     
     
     
