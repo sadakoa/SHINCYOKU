@@ -9,13 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <Social/Social.h>
 #import "DCSocial.h"
-
+#import "NADView.h"
 //#define POST_TEXT     @"#進捗どうですか"
 // #define POST_IMG_NAME  @"share.png"
 // #define POST_URL      @""
 
 @interface SNSViewController : UIViewController
-<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+<UIImagePickerControllerDelegate, UINavigationControllerDelegate, NADViewDelegate>
 
 {
     IBOutlet UILabel *label;
@@ -38,6 +38,8 @@
 // ライン画像投稿
 - (IBAction)postImageToLine:(id)sender;
 
+// 広告枠
+@property (nonatomic, retain) NADView * nadView;
 
 
 @end
