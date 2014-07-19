@@ -15,8 +15,6 @@
 #import <QuartzCore/QuartzCore.h>
 
 
-
-
 @interface ViewController () {
 }
 
@@ -64,33 +62,10 @@
     self.navigationController.navigationBar.tintColor =
     [UIColor whiteColor];
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:236/255.0 green:112/255.0 blue:97/255.0 alpha:1];
-    
-    // NADView の作成
-    _nadView = [[NADView alloc] initWithFrame:CGRectMake(0.f, 0.f, NAD_ADVIEW_SIZE_320x50.width, NAD_ADVIEW_SIZE_320x50.height)];
-    // apiKey, spotID をセットする
-    [_nadView setNendID:@"a6eca9dd074372c898dd1df549301f277c53f2b9" spotID:@"3172"];
-    // デリゲートオブジェクトの指定
-    [_nadView setDelegate:self];
-    // 広告のロードを開始
-    [_nadView load];
 
 }
 
 // ==================================================================================
-
-- (void)dealloc
-{
-    // delegate プロパティに nil をセットする
-    [_nadView setDelegate:nil];
-    _nadView = nil;
-}
-
-// 広告のロードが完了した時に実行される
-- (void)nadViewDidFinishLoad:(NADView *)adView
-{
-    // NADView を貼り付ける
-    [self.view addSubview:_nadView];
-}
 
 // ==================================================================================
 
