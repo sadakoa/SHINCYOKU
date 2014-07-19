@@ -11,12 +11,18 @@
 // ウォークスルーをインポート
 #import "EAIntroView.h"
 
+// 広告
+#import "NADView.h"
+
 @interface ViewController : UIViewController
-<UIImagePickerControllerDelegate, UINavigationControllerDelegate, EAIntroDelegate>
+<UIImagePickerControllerDelegate, UINavigationControllerDelegate, EAIntroDelegate, NADViewDelegate>
 
 {
     IBOutlet UILabel *label;
     IBOutlet UIImageView *imageView;
+    
+    // 広告
+     NADView *_nadView; // 追加
     
     //次の画面へ渡す引数
     UIImage *_beforeStampEditImage;
