@@ -101,8 +101,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="nendApiKey" value="a6eca9dd074372c898dd1df549301f277c53f2b9"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="nendSpotID" value="3172"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nendApiKey" value="d5474c8999182752195ae47e2b2c9b9cb031b3c9"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nendSpotID" value="206037"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
