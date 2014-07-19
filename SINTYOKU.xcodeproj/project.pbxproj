@@ -22,6 +22,9 @@
 		A23382A2197A08460068AEC4 /* WT04@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = A23382A0197A08460068AEC4 /* WT04@2X.png */; };
 		A233834C197A4C140068AEC4 /* libNendAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2338346197A4C140068AEC4 /* libNendAd.a */; };
 		A233834D197A4C140068AEC4 /* NADView_readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = A233834B197A4C140068AEC4 /* NADView_readme.txt */; };
+		A233834F197A4C3A0068AEC4 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A233834E197A4C3A0068AEC4 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A2338351197A4C400068AEC4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2338350197A4C400068AEC4 /* Security.framework */; };
+		A2338353197A4C460068AEC4 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2338352197A4C460068AEC4 /* ImageIO.framework */; };
 		A29768801965003C0000B976 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A297687F1965003C0000B976 /* Foundation.framework */; };
 		A29768821965003C0000B976 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29768811965003C0000B976 /* CoreGraphics.framework */; };
 		A29768841965003C0000B976 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29768831965003C0000B976 /* UIKit.framework */; };
@@ -88,6 +91,9 @@
 		A2338349197A4C140068AEC4 /* NADIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADIconView.h; sourceTree = "<group>"; };
 		A233834A197A4C140068AEC4 /* NADView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADView.h; sourceTree = "<group>"; };
 		A233834B197A4C140068AEC4 /* NADView_readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NADView_readme.txt; sourceTree = "<group>"; };
+		A233834E197A4C3A0068AEC4 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		A2338350197A4C400068AEC4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A2338352197A4C460068AEC4 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		A297687C1965003C0000B976 /* SINTYOKU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SINTYOKU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A297687F1965003C0000B976 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A29768811965003C0000B976 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -135,6 +141,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2338353197A4C460068AEC4 /* ImageIO.framework in Frameworks */,
+				A2338351197A4C400068AEC4 /* Security.framework in Frameworks */,
+				A233834F197A4C3A0068AEC4 /* AdSupport.framework in Frameworks */,
 				A23381ED197771FA0068AEC4 /* QuartzCore.framework in Frameworks */,
 				A29768E3196724260000B976 /* Social.framework in Frameworks */,
 				A29768821965003C0000B976 /* CoreGraphics.framework in Frameworks */,
@@ -196,6 +205,9 @@
 		A297687E1965003C0000B976 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A2338352197A4C460068AEC4 /* ImageIO.framework */,
+				A2338350197A4C400068AEC4 /* Security.framework */,
+				A233834E197A4C3A0068AEC4 /* AdSupport.framework */,
 				A23381EC197771FA0068AEC4 /* QuartzCore.framework */,
 				A29768E2196724260000B976 /* Social.framework */,
 				A297687F1965003C0000B976 /* Foundation.framework */,
