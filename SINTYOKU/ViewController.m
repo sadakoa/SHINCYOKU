@@ -12,12 +12,10 @@
 #import "EditImageViewController.h"
 
 // 多分必要な物
-#import "SMPageControl.h"
 #import <QuartzCore/QuartzCore.h>
 
 
 @interface ViewController () {
-    UIView *rootView;
 }
 
 @end
@@ -37,7 +35,6 @@
 //        [[NSUserDefaults standardUserDefaults] synchronize];
         // ここに書いた内容は初回起動時のみ処理
     
-        rootView = self.navigationController.view;
     EAIntroPage *page1 = [EAIntroPage page];
     page1.bgImage = [UIImage imageNamed:@"WT01"];
     
@@ -52,7 +49,7 @@
     
     EAIntroView *intro = [[EAIntroView alloc] initWithFrame:self.view.bounds andPages:@[page1,page2,page3,page4]];
     [intro setDelegate:self];
-    [intro showInView:rootView animateDuration:0.0];
+    [intro showInView:self.view animateDuration:0.0];
 
         
 //    }
