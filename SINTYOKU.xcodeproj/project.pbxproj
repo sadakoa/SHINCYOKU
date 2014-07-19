@@ -366,9 +366,6 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = sadakoa;
 				TargetAttributes = {
-					A297687B1965003C0000B976 = {
-						DevelopmentTeam = TQVABC52PW;
-					};
 					A297689C1965003C0000B976 = {
 						TestTargetID = A297687B1965003C0000B976;
 					};
@@ -609,7 +606,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SINTYOKU/SINTYOKU-Prefix.pch";
 				INFOPLIST_FILE = "SINTYOKU/SINTYOKU-Info.plist";
@@ -619,7 +615,6 @@
 				);
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -630,7 +625,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SINTYOKU/SINTYOKU-Prefix.pch";
 				INFOPLIST_FILE = "SINTYOKU/SINTYOKU-Info.plist";
@@ -640,7 +634,6 @@
 				);
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
