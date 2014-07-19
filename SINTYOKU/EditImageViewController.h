@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "WSCoachMarksView.h"
 // Error回避
+#import "NADView.h"
 
 @interface EditImageViewController : UIViewController\
-<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+<UIImagePickerControllerDelegate, UINavigationControllerDelegate, NADViewDelegate>
 
 {
     IBOutlet UILabel *label;
@@ -52,6 +53,8 @@
 
 // 画面に表示するためのもの
  @property (weak, nonatomic) IBOutlet UIImageView *argumentsLabelImage;
+
+@property (nonatomic, retain) NADView * nadView;
 
 
 @end
