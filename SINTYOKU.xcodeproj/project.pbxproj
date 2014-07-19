@@ -613,6 +613,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/NendAd",
 				);
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -631,6 +632,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/NendAd",
 				);
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
