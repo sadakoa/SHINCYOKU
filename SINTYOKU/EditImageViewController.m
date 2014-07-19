@@ -42,16 +42,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // (2) NADView の作成
-    self.nadView = [[NADView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
-    // (3) ログ出力の指定
-    [self.nadView setIsOutputLog:YES];
-    // (4) set apiKey, spotId.
-    [self.nadView setNendID:@"4aa26c786908832231939ae8df158c1e374046af"
-                     spotID:@"206034"];
-    [self.nadView setDelegate:self]; //(5)
-    [self.nadView load]; //(6)
-    [self.view addSubview:self.nadView]; // 最初から表示する場合
     
 //    BOOL coachMarksShown = [[NSUserDefaults standardUserDefaults] boolForKey:@"WSCoachMarksShown"];
 //    if (coachMarksShown == NO) {
