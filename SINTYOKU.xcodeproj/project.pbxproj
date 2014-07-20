@@ -366,6 +366,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = sadakoa;
 				TargetAttributes = {
+					A297687B1965003C0000B976 = {
+						DevelopmentTeam = TQVABC52PW;
+					};
 					A297689C1965003C0000B976 = {
 						TestTargetID = A297687B1965003C0000B976;
 					};
@@ -546,7 +549,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mamoru Kijima (TQVABC52PW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mamoru Kijima (TQVABC52PW)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -564,6 +568,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "F3C99C1A-A555-4046-9A0F-B4D3DB56DF47";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -584,7 +589,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mamoru Kijima (TQVABC52PW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mamoru Kijima (TQVABC52PW)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -595,6 +601,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "F3C99C1A-A555-4046-9A0F-B4D3DB56DF47";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -606,6 +613,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mamoru Kijima (TQVABC52PW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mamoru Kijima (TQVABC52PW)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SINTYOKU/SINTYOKU-Prefix.pch";
 				INFOPLIST_FILE = "SINTYOKU/SINTYOKU-Info.plist";
@@ -615,6 +624,7 @@
 				);
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F3C99C1A-A555-4046-9A0F-B4D3DB56DF47";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -625,6 +635,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mamoru Kijima (TQVABC52PW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mamoru Kijima (TQVABC52PW)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SINTYOKU/SINTYOKU-Prefix.pch";
 				INFOPLIST_FILE = "SINTYOKU/SINTYOKU-Info.plist";
@@ -634,6 +646,7 @@
 				);
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F3C99C1A-A555-4046-9A0F-B4D3DB56DF47";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -642,6 +655,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SINTYOKU.app/SINTYOKU";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mamoru Kijima (TQVABC52PW)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -655,6 +669,7 @@
 				);
 				INFOPLIST_FILE = "SINTYOKUTests/SINTYOKUTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F3C99C1A-A555-4046-9A0F-B4D3DB56DF47";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -664,6 +679,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SINTYOKU.app/SINTYOKU";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mamoru Kijima (TQVABC52PW)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -673,6 +689,7 @@
 				GCC_PREFIX_HEADER = "SINTYOKU/SINTYOKU-Prefix.pch";
 				INFOPLIST_FILE = "SINTYOKUTests/SINTYOKUTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F3C99C1A-A555-4046-9A0F-B4D3DB56DF47";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
