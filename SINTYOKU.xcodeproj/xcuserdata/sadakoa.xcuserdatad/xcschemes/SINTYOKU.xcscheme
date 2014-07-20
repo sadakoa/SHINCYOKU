@@ -91,7 +91,6 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
-      customArchiveName = "SINTYOKU"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
